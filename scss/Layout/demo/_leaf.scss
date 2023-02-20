@@ -1,0 +1,288 @@
+.content {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #F2EFE8;
+}
+
+.bgContent {
+    background: url(../img/backCnt.png) no-repeat center center;
+    background-size: 100% auto;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+
+.leftLeaf,
+.rightLeaf {
+    width: 50vw;
+    height: 100%;
+}
+
+.leafLeft {
+    position: absolute;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.leafLeft li {
+    position: absolute;
+    list-style: none;
+    top: -50px;
+    width: 50px;
+}
+
+.leafRight li {
+    position: absolute;
+    list-style: none;
+    top: -50px;
+    width: 50px;
+}
+
+
+@keyframes fall {
+    to {
+        top: 120%;
+    }
+}
+
+.leafs {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leafs.active {
+    .leafLeft li:nth-child(1) {
+        left: 0%;
+        top: -60px;
+        width: 48px;
+        height: 30px;
+        animation: fall 10s linear infinite,
+            sway2 3s ease-in-out infinite alternate;
+        animation-delay: 2s;
+    }
+
+    .leafLeft li:nth-child(2) {
+        left: 5%;
+        top: -70px;
+        width: 26px;
+        height: 18px;
+        animation: fall 15s linear infinite,
+            sway2 2s ease-in-out infinite alternate;
+        animation-delay: 8s;
+    }
+
+    .leafLeft li:nth-child(3) {
+        left: 15%;
+        top: -50px;
+        width: 32px;
+        height: 20px;
+        animation: fall 9s linear infinite,
+            sway2 3.5s ease-in-out infinite alternate;
+        animation-delay: 13s;
+    }
+
+    .leafLeft li:nth-child(4) {
+        left: 0%;
+        top: -70px;
+        width: 32px;
+        height: 20px;
+        animation: fall 8s linear infinite,
+            sway3 4s ease-in-out infinite alternate;
+        animation-delay: 7s;
+    }
+
+    .leafLeft li:nth-child(5) {
+        left: 0%;
+        top: -60px;
+        width: 32px;
+        height: 20px;
+        animation: fall 10s linear infinite,
+            sway3 4s ease-in-out infinite alternate;
+        animation-delay: 0s;
+    }
+
+    .leafLeft li:nth-child(6) {
+        left: 0%;
+        top: -50px;
+        width: 48px;
+        height: 30px;
+        animation: fall 11s linear infinite,
+            sway1 3s ease-in-out infinite alternate;
+        animation-delay: 3s;
+    }
+
+    .leafLeft li:nth-child(7) {
+        left: 0%;
+        top: -40px;
+        width: 32px;
+        height: 20px;
+        animation: fall 7s linear infinite,
+            sway1 3.5s ease-in-out infinite alternate;
+        animation-delay: 7s;
+    }
+
+    .leafLeft li:nth-child(8) {
+        left: 0%;
+        top: -60px;
+        width: 26px;
+        height: 18px;
+        animation: fall 7s linear infinite,
+            sway1 1s ease-in-out infinite alternate;
+        animation-delay: 3s;
+    }
+
+    .leafLeft li:nth-child(9) {
+        left: 0%;
+        top: -70px;
+        width: 32px;
+        height: 20px;
+        animation: fall 10s linear infinite,
+            sway2 3s ease-in-out infinite alternate;
+        animation-delay: 4s;
+    }
+}
+
+.leafs.active {
+    .leafRight li:nth-child(1) {
+        right: 0%;
+        top: -60px;
+        width: 48px;
+        height: 30px;
+        animation: fall 10s linear infinite,
+            sway3 3s ease-in-out infinite alternate;
+        animation-delay: 2s;
+    }
+
+    .leafRight li:nth-child(2) {
+        right: 5%;
+        top: -70px;
+        width: 26px;
+        height: 18px;
+        animation: fall 15s linear infinite,
+            sway3 2s ease-in-out infinite alternate;
+        animation-delay: 8s;
+    }
+
+    .leafRight li:nth-child(3) {
+        right: 15%;
+        top: -50px;
+        width: 32px;
+        height: 20px;
+        animation: fall 9s linear infinite,
+            sway3 3.5s ease-in-out infinite alternate;
+        animation-delay: 13s;
+    }
+
+    .leafRight li:nth-child(4) {
+        right: 0%;
+        top: -70px;
+        width: 32px;
+        height: 20px;
+        animation: fall 8s linear infinite,
+            sway4 4s ease-in-out infinite alternate;
+        animation-delay: 7s;
+    }
+
+    .leafRight li:nth-child(5) {
+        right: 0%;
+        top: -60px;
+        width: 32px;
+        height: 20px;
+        animation: fall 10s linear infinite,
+            sway3 4s ease-in-out infinite alternate;
+        animation-delay: 0s;
+    }
+
+    .leafRight li:nth-child(6) {
+        right: 0%;
+        top: -50px;
+        width: 48px;
+        height: 30px;
+        animation: fall 11s linear infinite,
+            sway4 3s ease-in-out infinite alternate;
+        animation-delay: 3s;
+    }
+
+    .leafRight li:nth-child(7) {
+        right: 0%;
+        top: -40px;
+        width: 32px;
+        height: 20px;
+        animation: fall 7s linear infinite,
+            sway4 3.5s ease-in-out infinite alternate;
+        animation-delay: 7s;
+    }
+
+    .leafRight li:nth-child(8) {
+        right: 0%;
+        top: -60px;
+        width: 26px;
+        height: 18px;
+        animation: fall 7s linear infinite,
+            sway3 3s ease-in-out infinite alternate;
+        animation-delay: 3s;
+    }
+
+    .leafRight li:nth-child(9) {
+        right: 0%;
+        top: -70px;
+        width: 32px;
+        height: 20px;
+        animation: fall 10s linear infinite,
+            sway4 4s ease-in-out infinite alternate;
+        animation-delay: 4s;
+    }
+}
+
+
+@keyframes sway1 {
+    from {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(150px) rotate(-45deg);
+    }
+}
+
+@keyframes sway2 {
+    from {
+        transform: translateX(150px) rotate(-45deg);
+    }
+
+    to {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
+
+@keyframes sway3 {
+    from {
+        transform: translateX(0px) rotate(0deg);
+    }
+
+    to {
+        transform: translateX(-150px) rotate(-45deg);
+    }
+}
+
+@keyframes sway4 {
+    from {
+        transform: translateX(-150px) rotate(-45deg);
+    }
+
+    to {
+        transform: translateX(0px) rotate(0deg);
+    }
+}
