@@ -1,0 +1,123 @@
+.gaufrierProducts{
+    background: #640D11;
+}
+*.gaufrierProductsInfoFx {
+    @include media($sp) {
+        @include ontener_width(375 , 331);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.secGaufrierProductsInfo {
+    width: 550px;
+    @include marginPercent(1350 , 61 , 0 , 0 , 0);
+    @include media($max1400) {
+        @include ontener_width(1350 , 558);
+    }
+    @include media($sp) {
+        width: 100%;
+    }
+}
+.sliderGaufrierProductsInfoWap {
+    width: 647px;
+    @include marginPercent(1350 , 0 , 36 , 0 , 0 );
+    @include media($max1400) {
+        @include ontener_width(1350 , 647);
+    }  
+    @include media($sp) {
+        margin: 13.5% auto 0 auto;
+        width: 100%;
+    }
+}
+
+//タイトルや文章部分
+.h2GaufrierProductsInfo {
+    width: 490px;
+    @include media($max1400) {
+        @include ontener_width(550 , 490);
+    }
+    @include media($sp) {
+        @include ontener_width(331 , 301);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+.txtGaufrierProductsInfo {
+    @include marginPercent(558 , 88 , 0 , 0 , 0 );
+    @include fontSizePc(22);
+    @include lineheight(22 , 50);
+    letter-spacing: 0em;
+    text-indent: -0em;
+    font-weight: 400;
+    @include media($sp) {
+        @include ontener_width(331 , 301);
+        margin: 13.5% auto 0 auto;
+        @include fontSizeSp(14);
+        @include lineheight(14 , 26);
+        letter-spacing: 0;
+        text-indent: 0;
+        font-weight: 400;
+    }
+}
+
+//スライダー設定
+.sliderGaufrierProductsInfoBtmWap{
+    @include marginPercent(647 , 20 , auto , 0 , auto);
+    @include media($sp){
+        margin: 3% auto 0 auto;
+    }
+}
+
+.sliderGaufrierProductBtm {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include media($tab) {
+        max-height: 9.777777777777779vw;
+    }
+    @include media($sp){
+        max-height: 18.133333333333333vw;
+    }
+    .slick-arrow {
+        background: unset;
+        padding: 0;
+        margin: 0;
+        border: none;
+        height: 100%;
+        @include ontener_width(647 , 15.2);
+        @include media($sp) {
+            @include ontener_width(331 , 7);
+        }
+    }
+    .slick-list {
+        padding: 0 !important;
+        @include ontener_width(647 , 587);
+        @include media($sp) {
+            @include ontener_width(331 , 299);
+        }
+    }
+    .liSliderGaufrierProductsInfoBtm {
+        width: 132px;
+        margin: 0 7.5px;
+        @include media($tab) {
+            width: 9.777777777777779vw !important;
+            margin: 0 0.4025925925925926vw !important;
+        }
+        @include media($sp) {
+            margin: 0 1.1vw !important;
+                width: 17.833333333333332vw !important;
+        }
+    } 
+}
+//今回だけ
+.slick-slide{
+    height: auto;
+}
+.liSliderGaufrierProductsInfoTop  {
+    @include kadomaru(6px);
+    overflow: hidden;
+}
+.liSliderGaufrierProductsInfoBtm  {
+    @include kadomaru(6px);
+    overflow: hidden;
+}

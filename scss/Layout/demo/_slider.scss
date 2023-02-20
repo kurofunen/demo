@@ -1,0 +1,65 @@
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+@use "../../Functions/mixin" as mi;
+
+ul {
+  margin:0;
+  padding: 0;
+}
+.layout {
+  width:600px;
+  margin:10px auto;
+  position: relative;
+  a {
+    color: #666;
+  }
+}
+.slide {
+  display:none;
+  li {
+    list-style: none;
+  }
+  &.slick-initialized {
+    display:block;
+  }
+}
+.slick-dots {
+  margin-top:5px;
+  margin-left: -5px;
+  margin-right: -5px;
+  display:flex;
+  justify-content: center;
+  li {
+    list-style: none;
+    display: inline-block;
+    max-width: 112px;
+    max-hegiht: 56px;
+    margin: 5px;
+    
+    img {
+      opacity: 0.5;
+      width: 100%;
+      height: auto;
+    }
+    
+    &.slick-active {
+      img {
+        opacity: 1;
+      }
+    }
+  }
+}
+
+.slick-prev {
+  position: absolute;
+  z-index: 99;
+  top:120px;
+  left: -50px;
+}
+.slick-next {
+  position: absolute;
+  z-index: 99;
+  top:120px;
+  right: -50px;
+}

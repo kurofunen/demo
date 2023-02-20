@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script src="js/scroll.js"></script>
+    </head>
+    <body>
+        <style>
+            .fv {
+                width: 100%;
+                height: 600px;
+                background-color: lightgray;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 80px;
+                font-weight: bold;
+            }
+            .continer {
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+            }
+            .inner {
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                clip: rect(auto, auto, auto, auto);
+                display: grid;
+                place-items: center;
+            }
+
+            .innerImage {
+                background: #777;
+                background-size: cover;
+                display: block;
+                top: 0;
+                left: 0;
+                z-index: -1;
+                display: block;
+                width: 100vw;
+                height: 100vh;
+            }
+            .innerImage.active{
+                position: fixed;
+                top:0;
+            }
+            .active0 > .innerImage{
+                background: #000;
+                background-size: cover;
+            }
+            .active1 >.innerImage{
+                background: #ccc;
+                background-size: cover;
+            }
+            .active2> .innerImage{
+                background: #888;
+                background-size: cover;
+            }
+            .active3> .innerImage{
+                background: #333;
+                background-size: cover;
+            }
+            .contentsH1 {
+                color: #fff;
+                font-size: 60px;
+                height: 100%;
+            }
+
+        </style>
+        <div class="fv">
+
+        </div>
+        <div class="continer">
+            <div class="inner">
+                <div class="innerImage"></div>
+                <div class="contents">
+                    <h1 class="contentsH1">もじ1もじ1もじ1もじ</h1>
+                </div>
+            </div>
+            <div class="fv">
+
+        </div>
+            <div class="inner">
+                <div class="innerImage"></div>
+                <div class="contents">
+                    <h1 class="contentsH1">もじ2もじ2もじ2もじ2</h1>
+                </div>
+            </div>
+
+            <div class="inner">
+                <div class="innerImage"></div>
+                <div class="contents">
+                    <h1 class="contentsH1">もじ3もじ3もじ3</h1>
+                </div>
+            </div>
+
+            <div class="inner">
+                <div class="innerImage"></div>
+                <div class="contents">
+                    <h1 class="contentsH1">もじ4もじ4もじ4</h1>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

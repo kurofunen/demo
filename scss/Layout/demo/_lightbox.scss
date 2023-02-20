@@ -1,0 +1,46 @@
+.bglightboxWap {
+	background: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	display: none;
+}
+.lightboxWap {
+	width: 750px;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	padding-top: 41.7px;
+	padding-bottom: 100px;
+	padding-left: 0px;
+	padding-right: 0px;
+	z-index: 999999;
+	display: none;
+}
+.innerWapLightBox {
+	width: 92%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.btmMnp {
+	width: 5%;
+	margin-top: 40px;
+	margin-bottom: 0px;
+	margin-left: auto;
+	margin-right: auto;
+	cursor: pointer;
+	img {
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+}
+.closeLightBox {
+	width: 6.76%;
+	margin: 0 0 0 auto;
+}

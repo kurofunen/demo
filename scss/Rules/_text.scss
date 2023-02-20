@@ -1,0 +1,45 @@
+body {
+    font-family: 'Zen Kaku Gothic New', sans-serif;
+    font-weight: 500;
+    color: #333;
+}
+
+body {
+
+    input,
+    textarea,
+    button {
+        font-family: 'Zen Kaku Gothic New', sans-serif;
+        font-weight: 500;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+        line-height: 1;
+        font-weight: 500;
+        //;
+    }
+}
+
+#mintyou,
+.mintyou {
+    font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS 明朝 E, Meiryo, serif;
+}
+
+.t_center {
+    text-align: center;
+}
+
+.text_justify {
+    text-align: justify;
+    text-justify: inter-ideograph;
+}
+
+.kiwi {
+    font-family: 'Kiwi Maru', serif;
+}
