@@ -1,0 +1,141 @@
+.swiper01.swiper{
+	
+}
+/* .slide-img の背景画像の設定を追加 */
+.swiper01 > .swiper-slide {
+	display: flex;
+	width: 100% !important;
+}
+
+.swiper01 .slide-img {
+	/* 小画面 */
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	overflow: visible;
+	width: clamp(355px, 60%, 1144px);
+	height: 800px;
+	margin: 0 0 0 auto;
+}
+
+.swiper01 .slide-content {
+	position: absolute;
+	z-index: 1;
+	top: 0;
+	left: 10vw;
+	flex-direction: column;
+	height: calc(100vh - 6.4vw);
+	align-items: flex-start;
+}
+
+.from_bottomwap {
+	color: #333;
+	font-size: 30px;
+}
+
+.fromBottom02wap {
+	color: #333;
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+}
+
+.from_bottomwap {
+	transform: translate3d(0px, 20px, 0px);
+	opacity: 0;
+	position: relative;
+}
+
+.swiper01 .swiper-slide-active .from_bottomwap {
+	-webkit-animation: fromBottom 0.25s 1 normal both 0.25s;
+	animation: fromBottom 0.25s 1 normal both 0.25s;
+}
+
+.fromBottom02wap {
+	transform: translate3d(0px, 20px, 0px);
+	opacity: 0;
+	position: relative;
+}
+
+.swiper01 .swiper-slide-active .fromBottom02wap {
+	-webkit-animation: fromBottom02 0.25s 1 normal both .5s;
+	animation: fromBottom02 0.25s 1 normal both .5s;
+}
+
+/* 文字のアニメーション */
+@keyframes fromBottom {
+	0% {
+		opacity: 0;
+		transform: translate3d(0px, 20px, 0px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+@keyframes fromBottom02 {
+	0% {
+		opacity: 0;
+		transform: translate3d(0px, 20px, 0px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translate3d(0px, 0px, 0px);
+	}
+}
+
+.swiper01 .swiper-slide-active .slide-img {
+	/* img を削除 */
+	animation: hidden 0.5s ease-in-out 0s 1 normal both;
+}
+
+
+@keyframes hidden {
+	0% {
+		width: 0;
+	}
+
+	100% {
+		width: clamp(355px, 60%, 1144px);
+	}
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	width: clamp(350px, 39%, 745px);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+	margin: 4px 0;
+}
+
+/*サムネイル付きスライダ*/
+.swipperWap02 .slider .swiper-slide {
+	display: flex;
+}
+.swipper-wapper{
+	margin: 0 auto;
+}
+.slider-thumbnail{
+	
+}
+.slider-thumbnail .swiper-slide {
+	opacity: .5;
+	transition: opacity .5s;
+	width: calc(100% / 3);
+}
+
+.slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
+	opacity: 1;
+}
+.swiper-slide img {
+	height: auto;
+	width: 100%;
+}

@@ -284,3 +284,292 @@
         transform: translateY(0)
     }
 }
+//一覧
+.listSec {
+    width: clamp(355px, 98%, 1600px);
+    margin: 10% auto 0 auto;
+}
+
+.listTitle {
+    display: flex;
+}
+
+.listTitleJp {
+    margin: 0 0 0 5px;
+}
+
+.listUl {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.listLi {
+    width: calc(100%/3);
+    overflow: hidden;
+}
+
+.listLink {
+    display: block;
+    position: relative;
+}
+
+.listLinkH4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.prefcover {
+    background: #000;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+//一覧アニメーション
+@keyframes fadein_nyoki {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 30%, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes fadein_nyokiList {
+    0% {
+        opacity: 0;
+        transform: translate3d(0px, 100%, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+@keyframes fadein_pref {
+    0% {
+        opacity: 0;
+        width: 0;
+        transform: translate3d(-50px, 0px, 0px);
+    }
+
+    100% {
+        opacity: 1;
+        width: fit-content;
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.opacity_0_fade_set {
+    transform: translate3d(0px, 20px, 0px);
+    opacity: 0;
+    position: relative;
+
+    &.active {
+        -webkit-animation: fadein_sc_top 0.75s ease 0.35s forwards alternate;
+        animation: fadein_sc_top 0.75s ease 0.35s forwards alternate;
+    }
+}
+
+.opacity_0_fadeleft_in {
+    opacity: 0;
+    transform: translate3d(-20px, 0px, 0px);
+
+    &.active {
+        -webkit-animation: fadein_sc_left 0.75s ease 0.35s forwards alternate;
+        animation: fadein_sc_left 0.75s ease 0.35s forwards alternate;
+    }
+}
+
+.opacity_nyoki {
+    overflow: hidden;
+    opacity: 0;
+    transform: translate3d(0px, 30%, 0px);
+
+    &.active {
+        -webkit-animation: fadein_nyoki 0.5s ease-in-out 0s 1 normal both;
+        animation: fadein_nyoki 0.5s ease-in-out 0s 1 normal both;
+    }
+}
+
+.opacity_nyokiList {
+    overflow: hidden;
+
+    &>li,
+    section,
+    div,
+    tr,
+    figure,
+    span {
+        transform: translate3d(0px, 100%, 0px);
+        opacity: 0;
+        position: relative;
+    }
+
+    &.active {
+
+        &>li,
+        section,
+        div,
+        p,
+        h2,
+        h3,
+        h4,
+        h5,
+        figure,
+        span {
+            @for $var from 1 through 12 {
+                $delay : 0.25*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: fadein_nyokiList 0.5s ease-in-out #{$delay}s forwards alternate;
+                    animation: fadein_nyokiList 0.5s ease-in-out #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+.opacity_pref {
+    overflow: hidden;
+    opacity: 0;
+    width: 0;
+
+    &.active {
+        -webkit-animation: fadein_pref 0.5s ease-in-out 0s 1 normal both;
+        animation: fadein_pref 0.5s ease-in-out 0s 1 normal both;
+    }
+}
+
+.opacity_0_faderight_in {
+    opacity: 0;
+    transform: translate3d(20px, 0px, 0px);
+
+    &.active {
+        -webkit-animation: fadein_sc_right 0.75s ease 0.35s forwards alternate;
+        animation: fadein_sc_right 0.75s ease 0.35s forwards alternate;
+    }
+}
+
+.opacity_0_fade_in {
+    opacity: 0;
+
+    &.active {
+        -webkit-animation: fadein_in 0.75s ease 0.35s forwards alternate;
+        animation: fadein_in 0.75s ease 0.35s forwards alternate;
+    }
+}
+
+.opacity_0_list_fade_set {
+
+    &>li,
+    section,
+    div,
+    tr,
+    figure {
+        transform: translate3d(0px, 20px, 0px);
+        opacity: 0;
+        position: relative;
+    }
+
+    &.active {
+
+        &>li,
+        section,
+        div,
+        p,
+        h2,
+        h3,
+        h4,
+        h5,
+        figure {
+            @for $var from 1 through 12 {
+                $delay : 0.35*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: fadein_sc_top 0.75s ease #{$delay}s forwards alternate;
+                    animation: fadein_sc_top 0.75s ease #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+.opacity_0_list_left_fade_set {
+
+    &>li,
+    section,
+    div,
+    tr,
+    figure {
+        transform: translate3d(-10px, 0px, 0px);
+        opacity: 0;
+    }
+
+    &.active {
+
+        &>li,
+        section,
+        div,
+        p,
+        h2,
+        h3,
+        h4,
+        h5,
+        figure {
+            @for $var from 1 through 12 {
+                $delay : 0.35*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: fadein_sc_left 0.75s ease #{$delay}s forwards alternate;
+                    animation: fadein_sc_left 0.75s ease #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+.opacity_0_list_right_fade_set {
+
+    &>li,
+    section,
+    div,
+    tr,
+    figure {
+        transform: translate3d(-10px, 0px, 0px);
+        opacity: 0;
+    }
+
+    &.active {
+
+        &>li,
+        section,
+        div,
+        p,
+        h2,
+        h3,
+        h4,
+        h5,
+        figure {
+            @for $var from 1 through 12 {
+                $delay : 0.35*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: fadein_sc_right 0.75s ease #{$delay}s forwards alternate;
+                    animation: fadein_sc_right 0.75s ease #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+.bounsebox {
+    &.active {
+        //@include animation_bounce();
+    }
+}

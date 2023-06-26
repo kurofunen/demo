@@ -415,37 +415,113 @@ svg {
   font-wieght: 800;
 }
 
-/* ==========================================================================
-use＆nameSpace
-========================================================================== */
-/* ==========================================================================
-LAYOUT
-========================================================================== */
 .loadings {
+  background: #fff;
+  height: 100vh;
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100vh;
-  background: #fff;
-  z-index: 999;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
 }
 
-.loadingWap {
-  position: absolute;
-  left: 0;
-  top: 0;
-  bottom: 0;
-  right: 0;
+.picloadings {
+  width: 760px;
   margin: auto;
+  display: none;
+}
+
+.loadingsCover {
+  background: #fff;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 99999;
   display: flex;
   justify-content: center;
   align-items: center;
+  display: none;
 }
 
-.picLoadings {
-  width: 404px;
-  height: auto;
+.SliderCotetgeDetailWapIn {
+  width: 343px;
+}
+
+.listcnt .moveList1 {
+  opacity: 0;
+}
+.listcnt.active .moveList1 {
+  animation: fadein_in 0.75s ease 0.5s forwards alternate;
+}
+.listcnt .moveList2 {
+  opacity: 0;
+}
+.listcnt.active .moveList2 {
+  animation: fadein_in 0.75s ease 1s forwards alternate;
+}
+.listcnt .moveList3 {
+  opacity: 0;
+}
+.listcnt.active .moveList3 {
+  animation: fadein_in 0.75s ease 1.5s forwards alternate;
+}
+.listcnt .moveList4 {
+  opacity: 0;
+}
+.listcnt.active .moveList4 {
+  animation: fadein_in 0.75s ease 2s forwards alternate;
+}
+.listcnt .moveList5 {
+  opacity: 0;
+}
+.listcnt.active .moveList5 {
+  animation: fadein_in 0.75s ease 2.5s forwards alternate;
+}
+.listcnt .moveList6 {
+  opacity: 0;
+}
+.listcnt.active .moveList6 {
+  animation: fadein_in 0.75s ease 3s forwards alternate;
+}
+.listcnt .moveList7 {
+  opacity: 0;
+}
+.listcnt.active .moveList7 {
+  animation: fadein_in 0.75s ease 3.5s forwards alternate;
+}
+.listcnt .moveList8 {
+  opacity: 0;
+}
+.listcnt.active .moveList8 {
+  animation: fadein_in 0.75s ease 4s forwards alternate;
+}
+.listcnt .moveList9 {
+  opacity: 0;
+}
+.listcnt.active .moveList9 {
+  animation: fadein_in 0.75s ease 4.5s forwards alternate;
+}
+.listcnt .moveList10 {
+  opacity: 0;
+}
+.listcnt.active .moveList10 {
+  animation: fadein_in 0.75s ease 5s forwards alternate;
+}
+
+.mainarea {
+  width: 100%;
+  height: 500vh;
+  background: pink;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .bglightboxWap {
@@ -702,6 +778,712 @@ LAYOUT
     transform: translateY(0);
   }
 }
+.listSec {
+  width: clamp(355px, 98%, 1600px);
+  margin: 10% auto 0 auto;
+}
+
+.listTitle {
+  display: flex;
+}
+
+.listTitleJp {
+  margin: 0 0 0 5px;
+}
+
+.listUl {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.listLi {
+  width: 33.3333333333%;
+  overflow: hidden;
+}
+
+.listLink {
+  display: block;
+  position: relative;
+}
+
+.listLinkH4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.prefcover {
+  background: #000;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes fadein_nyoki {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 30%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes fadein_nyokiList {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 100%, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes fadein_pref {
+  0% {
+    opacity: 0;
+    width: 0;
+    transform: translate3d(-50px, 0px, 0px);
+  }
+  100% {
+    opacity: 1;
+    width: -moz-fit-content;
+    width: fit-content;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.opacity_0_fade_set {
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  position: relative;
+}
+.opacity_0_fade_set.active {
+  animation: fadein_sc_top 0.75s ease 0.35s forwards alternate;
+}
+
+.opacity_0_fadeleft_in {
+  opacity: 0;
+  transform: translate3d(-20px, 0px, 0px);
+}
+.opacity_0_fadeleft_in.active {
+  animation: fadein_sc_left 0.75s ease 0.35s forwards alternate;
+}
+
+.opacity_nyoki {
+  overflow: hidden;
+  opacity: 0;
+  transform: translate3d(0px, 30%, 0px);
+}
+.opacity_nyoki.active {
+  animation: fadein_nyoki 0.5s ease-in-out 0s 1 normal both;
+}
+
+.opacity_nyokiList {
+  overflow: hidden;
+}
+.opacity_nyokiList > li,
+.opacity_nyokiList section,
+.opacity_nyokiList div,
+.opacity_nyokiList tr,
+.opacity_nyokiList figure,
+.opacity_nyokiList span {
+  transform: translate3d(0px, 100%, 0px);
+  opacity: 0;
+  position: relative;
+}
+.opacity_nyokiList.active > li:nth-child(1),
+.opacity_nyokiList.active section:nth-child(1),
+.opacity_nyokiList.active div:nth-child(1),
+.opacity_nyokiList.active p:nth-child(1),
+.opacity_nyokiList.active h2:nth-child(1),
+.opacity_nyokiList.active h3:nth-child(1),
+.opacity_nyokiList.active h4:nth-child(1),
+.opacity_nyokiList.active h5:nth-child(1),
+.opacity_nyokiList.active figure:nth-child(1),
+.opacity_nyokiList.active span:nth-child(1) {
+  animation: fadein_nyokiList 0.5s ease-in-out 0.25s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(2),
+.opacity_nyokiList.active section:nth-child(2),
+.opacity_nyokiList.active div:nth-child(2),
+.opacity_nyokiList.active p:nth-child(2),
+.opacity_nyokiList.active h2:nth-child(2),
+.opacity_nyokiList.active h3:nth-child(2),
+.opacity_nyokiList.active h4:nth-child(2),
+.opacity_nyokiList.active h5:nth-child(2),
+.opacity_nyokiList.active figure:nth-child(2),
+.opacity_nyokiList.active span:nth-child(2) {
+  animation: fadein_nyokiList 0.5s ease-in-out 0.5s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(3),
+.opacity_nyokiList.active section:nth-child(3),
+.opacity_nyokiList.active div:nth-child(3),
+.opacity_nyokiList.active p:nth-child(3),
+.opacity_nyokiList.active h2:nth-child(3),
+.opacity_nyokiList.active h3:nth-child(3),
+.opacity_nyokiList.active h4:nth-child(3),
+.opacity_nyokiList.active h5:nth-child(3),
+.opacity_nyokiList.active figure:nth-child(3),
+.opacity_nyokiList.active span:nth-child(3) {
+  animation: fadein_nyokiList 0.5s ease-in-out 0.75s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(4),
+.opacity_nyokiList.active section:nth-child(4),
+.opacity_nyokiList.active div:nth-child(4),
+.opacity_nyokiList.active p:nth-child(4),
+.opacity_nyokiList.active h2:nth-child(4),
+.opacity_nyokiList.active h3:nth-child(4),
+.opacity_nyokiList.active h4:nth-child(4),
+.opacity_nyokiList.active h5:nth-child(4),
+.opacity_nyokiList.active figure:nth-child(4),
+.opacity_nyokiList.active span:nth-child(4) {
+  animation: fadein_nyokiList 0.5s ease-in-out 1s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(5),
+.opacity_nyokiList.active section:nth-child(5),
+.opacity_nyokiList.active div:nth-child(5),
+.opacity_nyokiList.active p:nth-child(5),
+.opacity_nyokiList.active h2:nth-child(5),
+.opacity_nyokiList.active h3:nth-child(5),
+.opacity_nyokiList.active h4:nth-child(5),
+.opacity_nyokiList.active h5:nth-child(5),
+.opacity_nyokiList.active figure:nth-child(5),
+.opacity_nyokiList.active span:nth-child(5) {
+  animation: fadein_nyokiList 0.5s ease-in-out 1.25s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(6),
+.opacity_nyokiList.active section:nth-child(6),
+.opacity_nyokiList.active div:nth-child(6),
+.opacity_nyokiList.active p:nth-child(6),
+.opacity_nyokiList.active h2:nth-child(6),
+.opacity_nyokiList.active h3:nth-child(6),
+.opacity_nyokiList.active h4:nth-child(6),
+.opacity_nyokiList.active h5:nth-child(6),
+.opacity_nyokiList.active figure:nth-child(6),
+.opacity_nyokiList.active span:nth-child(6) {
+  animation: fadein_nyokiList 0.5s ease-in-out 1.5s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(7),
+.opacity_nyokiList.active section:nth-child(7),
+.opacity_nyokiList.active div:nth-child(7),
+.opacity_nyokiList.active p:nth-child(7),
+.opacity_nyokiList.active h2:nth-child(7),
+.opacity_nyokiList.active h3:nth-child(7),
+.opacity_nyokiList.active h4:nth-child(7),
+.opacity_nyokiList.active h5:nth-child(7),
+.opacity_nyokiList.active figure:nth-child(7),
+.opacity_nyokiList.active span:nth-child(7) {
+  animation: fadein_nyokiList 0.5s ease-in-out 1.75s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(8),
+.opacity_nyokiList.active section:nth-child(8),
+.opacity_nyokiList.active div:nth-child(8),
+.opacity_nyokiList.active p:nth-child(8),
+.opacity_nyokiList.active h2:nth-child(8),
+.opacity_nyokiList.active h3:nth-child(8),
+.opacity_nyokiList.active h4:nth-child(8),
+.opacity_nyokiList.active h5:nth-child(8),
+.opacity_nyokiList.active figure:nth-child(8),
+.opacity_nyokiList.active span:nth-child(8) {
+  animation: fadein_nyokiList 0.5s ease-in-out 2s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(9),
+.opacity_nyokiList.active section:nth-child(9),
+.opacity_nyokiList.active div:nth-child(9),
+.opacity_nyokiList.active p:nth-child(9),
+.opacity_nyokiList.active h2:nth-child(9),
+.opacity_nyokiList.active h3:nth-child(9),
+.opacity_nyokiList.active h4:nth-child(9),
+.opacity_nyokiList.active h5:nth-child(9),
+.opacity_nyokiList.active figure:nth-child(9),
+.opacity_nyokiList.active span:nth-child(9) {
+  animation: fadein_nyokiList 0.5s ease-in-out 2.25s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(10),
+.opacity_nyokiList.active section:nth-child(10),
+.opacity_nyokiList.active div:nth-child(10),
+.opacity_nyokiList.active p:nth-child(10),
+.opacity_nyokiList.active h2:nth-child(10),
+.opacity_nyokiList.active h3:nth-child(10),
+.opacity_nyokiList.active h4:nth-child(10),
+.opacity_nyokiList.active h5:nth-child(10),
+.opacity_nyokiList.active figure:nth-child(10),
+.opacity_nyokiList.active span:nth-child(10) {
+  animation: fadein_nyokiList 0.5s ease-in-out 2.5s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(11),
+.opacity_nyokiList.active section:nth-child(11),
+.opacity_nyokiList.active div:nth-child(11),
+.opacity_nyokiList.active p:nth-child(11),
+.opacity_nyokiList.active h2:nth-child(11),
+.opacity_nyokiList.active h3:nth-child(11),
+.opacity_nyokiList.active h4:nth-child(11),
+.opacity_nyokiList.active h5:nth-child(11),
+.opacity_nyokiList.active figure:nth-child(11),
+.opacity_nyokiList.active span:nth-child(11) {
+  animation: fadein_nyokiList 0.5s ease-in-out 2.75s forwards alternate;
+}
+.opacity_nyokiList.active > li:nth-child(12),
+.opacity_nyokiList.active section:nth-child(12),
+.opacity_nyokiList.active div:nth-child(12),
+.opacity_nyokiList.active p:nth-child(12),
+.opacity_nyokiList.active h2:nth-child(12),
+.opacity_nyokiList.active h3:nth-child(12),
+.opacity_nyokiList.active h4:nth-child(12),
+.opacity_nyokiList.active h5:nth-child(12),
+.opacity_nyokiList.active figure:nth-child(12),
+.opacity_nyokiList.active span:nth-child(12) {
+  animation: fadein_nyokiList 0.5s ease-in-out 3s forwards alternate;
+}
+
+.opacity_pref {
+  overflow: hidden;
+  opacity: 0;
+  width: 0;
+}
+.opacity_pref.active {
+  animation: fadein_pref 0.5s ease-in-out 0s 1 normal both;
+}
+
+.opacity_0_faderight_in {
+  opacity: 0;
+  transform: translate3d(20px, 0px, 0px);
+}
+.opacity_0_faderight_in.active {
+  animation: fadein_sc_right 0.75s ease 0.35s forwards alternate;
+}
+
+.opacity_0_fade_in {
+  opacity: 0;
+}
+.opacity_0_fade_in.active {
+  animation: fadein_in 0.75s ease 0.35s forwards alternate;
+}
+
+.opacity_0_list_fade_set > li,
+.opacity_0_list_fade_set section,
+.opacity_0_list_fade_set div,
+.opacity_0_list_fade_set tr,
+.opacity_0_list_fade_set figure {
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  position: relative;
+}
+.opacity_0_list_fade_set.active > li:nth-child(1),
+.opacity_0_list_fade_set.active section:nth-child(1),
+.opacity_0_list_fade_set.active div:nth-child(1),
+.opacity_0_list_fade_set.active p:nth-child(1),
+.opacity_0_list_fade_set.active h2:nth-child(1),
+.opacity_0_list_fade_set.active h3:nth-child(1),
+.opacity_0_list_fade_set.active h4:nth-child(1),
+.opacity_0_list_fade_set.active h5:nth-child(1),
+.opacity_0_list_fade_set.active figure:nth-child(1) {
+  animation: fadein_sc_top 0.75s ease 0.35s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(2),
+.opacity_0_list_fade_set.active section:nth-child(2),
+.opacity_0_list_fade_set.active div:nth-child(2),
+.opacity_0_list_fade_set.active p:nth-child(2),
+.opacity_0_list_fade_set.active h2:nth-child(2),
+.opacity_0_list_fade_set.active h3:nth-child(2),
+.opacity_0_list_fade_set.active h4:nth-child(2),
+.opacity_0_list_fade_set.active h5:nth-child(2),
+.opacity_0_list_fade_set.active figure:nth-child(2) {
+  animation: fadein_sc_top 0.75s ease 0.7s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(3),
+.opacity_0_list_fade_set.active section:nth-child(3),
+.opacity_0_list_fade_set.active div:nth-child(3),
+.opacity_0_list_fade_set.active p:nth-child(3),
+.opacity_0_list_fade_set.active h2:nth-child(3),
+.opacity_0_list_fade_set.active h3:nth-child(3),
+.opacity_0_list_fade_set.active h4:nth-child(3),
+.opacity_0_list_fade_set.active h5:nth-child(3),
+.opacity_0_list_fade_set.active figure:nth-child(3) {
+  animation: fadein_sc_top 0.75s ease 1.05s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(4),
+.opacity_0_list_fade_set.active section:nth-child(4),
+.opacity_0_list_fade_set.active div:nth-child(4),
+.opacity_0_list_fade_set.active p:nth-child(4),
+.opacity_0_list_fade_set.active h2:nth-child(4),
+.opacity_0_list_fade_set.active h3:nth-child(4),
+.opacity_0_list_fade_set.active h4:nth-child(4),
+.opacity_0_list_fade_set.active h5:nth-child(4),
+.opacity_0_list_fade_set.active figure:nth-child(4) {
+  animation: fadein_sc_top 0.75s ease 1.4s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(5),
+.opacity_0_list_fade_set.active section:nth-child(5),
+.opacity_0_list_fade_set.active div:nth-child(5),
+.opacity_0_list_fade_set.active p:nth-child(5),
+.opacity_0_list_fade_set.active h2:nth-child(5),
+.opacity_0_list_fade_set.active h3:nth-child(5),
+.opacity_0_list_fade_set.active h4:nth-child(5),
+.opacity_0_list_fade_set.active h5:nth-child(5),
+.opacity_0_list_fade_set.active figure:nth-child(5) {
+  animation: fadein_sc_top 0.75s ease 1.75s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(6),
+.opacity_0_list_fade_set.active section:nth-child(6),
+.opacity_0_list_fade_set.active div:nth-child(6),
+.opacity_0_list_fade_set.active p:nth-child(6),
+.opacity_0_list_fade_set.active h2:nth-child(6),
+.opacity_0_list_fade_set.active h3:nth-child(6),
+.opacity_0_list_fade_set.active h4:nth-child(6),
+.opacity_0_list_fade_set.active h5:nth-child(6),
+.opacity_0_list_fade_set.active figure:nth-child(6) {
+  animation: fadein_sc_top 0.75s ease 2.1s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(7),
+.opacity_0_list_fade_set.active section:nth-child(7),
+.opacity_0_list_fade_set.active div:nth-child(7),
+.opacity_0_list_fade_set.active p:nth-child(7),
+.opacity_0_list_fade_set.active h2:nth-child(7),
+.opacity_0_list_fade_set.active h3:nth-child(7),
+.opacity_0_list_fade_set.active h4:nth-child(7),
+.opacity_0_list_fade_set.active h5:nth-child(7),
+.opacity_0_list_fade_set.active figure:nth-child(7) {
+  animation: fadein_sc_top 0.75s ease 2.45s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(8),
+.opacity_0_list_fade_set.active section:nth-child(8),
+.opacity_0_list_fade_set.active div:nth-child(8),
+.opacity_0_list_fade_set.active p:nth-child(8),
+.opacity_0_list_fade_set.active h2:nth-child(8),
+.opacity_0_list_fade_set.active h3:nth-child(8),
+.opacity_0_list_fade_set.active h4:nth-child(8),
+.opacity_0_list_fade_set.active h5:nth-child(8),
+.opacity_0_list_fade_set.active figure:nth-child(8) {
+  animation: fadein_sc_top 0.75s ease 2.8s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(9),
+.opacity_0_list_fade_set.active section:nth-child(9),
+.opacity_0_list_fade_set.active div:nth-child(9),
+.opacity_0_list_fade_set.active p:nth-child(9),
+.opacity_0_list_fade_set.active h2:nth-child(9),
+.opacity_0_list_fade_set.active h3:nth-child(9),
+.opacity_0_list_fade_set.active h4:nth-child(9),
+.opacity_0_list_fade_set.active h5:nth-child(9),
+.opacity_0_list_fade_set.active figure:nth-child(9) {
+  animation: fadein_sc_top 0.75s ease 3.15s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(10),
+.opacity_0_list_fade_set.active section:nth-child(10),
+.opacity_0_list_fade_set.active div:nth-child(10),
+.opacity_0_list_fade_set.active p:nth-child(10),
+.opacity_0_list_fade_set.active h2:nth-child(10),
+.opacity_0_list_fade_set.active h3:nth-child(10),
+.opacity_0_list_fade_set.active h4:nth-child(10),
+.opacity_0_list_fade_set.active h5:nth-child(10),
+.opacity_0_list_fade_set.active figure:nth-child(10) {
+  animation: fadein_sc_top 0.75s ease 3.5s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(11),
+.opacity_0_list_fade_set.active section:nth-child(11),
+.opacity_0_list_fade_set.active div:nth-child(11),
+.opacity_0_list_fade_set.active p:nth-child(11),
+.opacity_0_list_fade_set.active h2:nth-child(11),
+.opacity_0_list_fade_set.active h3:nth-child(11),
+.opacity_0_list_fade_set.active h4:nth-child(11),
+.opacity_0_list_fade_set.active h5:nth-child(11),
+.opacity_0_list_fade_set.active figure:nth-child(11) {
+  animation: fadein_sc_top 0.75s ease 3.85s forwards alternate;
+}
+.opacity_0_list_fade_set.active > li:nth-child(12),
+.opacity_0_list_fade_set.active section:nth-child(12),
+.opacity_0_list_fade_set.active div:nth-child(12),
+.opacity_0_list_fade_set.active p:nth-child(12),
+.opacity_0_list_fade_set.active h2:nth-child(12),
+.opacity_0_list_fade_set.active h3:nth-child(12),
+.opacity_0_list_fade_set.active h4:nth-child(12),
+.opacity_0_list_fade_set.active h5:nth-child(12),
+.opacity_0_list_fade_set.active figure:nth-child(12) {
+  animation: fadein_sc_top 0.75s ease 4.2s forwards alternate;
+}
+
+.opacity_0_list_left_fade_set > li,
+.opacity_0_list_left_fade_set section,
+.opacity_0_list_left_fade_set div,
+.opacity_0_list_left_fade_set tr,
+.opacity_0_list_left_fade_set figure {
+  transform: translate3d(-10px, 0px, 0px);
+  opacity: 0;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(1),
+.opacity_0_list_left_fade_set.active section:nth-child(1),
+.opacity_0_list_left_fade_set.active div:nth-child(1),
+.opacity_0_list_left_fade_set.active p:nth-child(1),
+.opacity_0_list_left_fade_set.active h2:nth-child(1),
+.opacity_0_list_left_fade_set.active h3:nth-child(1),
+.opacity_0_list_left_fade_set.active h4:nth-child(1),
+.opacity_0_list_left_fade_set.active h5:nth-child(1),
+.opacity_0_list_left_fade_set.active figure:nth-child(1) {
+  animation: fadein_sc_left 0.75s ease 0.35s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(2),
+.opacity_0_list_left_fade_set.active section:nth-child(2),
+.opacity_0_list_left_fade_set.active div:nth-child(2),
+.opacity_0_list_left_fade_set.active p:nth-child(2),
+.opacity_0_list_left_fade_set.active h2:nth-child(2),
+.opacity_0_list_left_fade_set.active h3:nth-child(2),
+.opacity_0_list_left_fade_set.active h4:nth-child(2),
+.opacity_0_list_left_fade_set.active h5:nth-child(2),
+.opacity_0_list_left_fade_set.active figure:nth-child(2) {
+  animation: fadein_sc_left 0.75s ease 0.7s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(3),
+.opacity_0_list_left_fade_set.active section:nth-child(3),
+.opacity_0_list_left_fade_set.active div:nth-child(3),
+.opacity_0_list_left_fade_set.active p:nth-child(3),
+.opacity_0_list_left_fade_set.active h2:nth-child(3),
+.opacity_0_list_left_fade_set.active h3:nth-child(3),
+.opacity_0_list_left_fade_set.active h4:nth-child(3),
+.opacity_0_list_left_fade_set.active h5:nth-child(3),
+.opacity_0_list_left_fade_set.active figure:nth-child(3) {
+  animation: fadein_sc_left 0.75s ease 1.05s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(4),
+.opacity_0_list_left_fade_set.active section:nth-child(4),
+.opacity_0_list_left_fade_set.active div:nth-child(4),
+.opacity_0_list_left_fade_set.active p:nth-child(4),
+.opacity_0_list_left_fade_set.active h2:nth-child(4),
+.opacity_0_list_left_fade_set.active h3:nth-child(4),
+.opacity_0_list_left_fade_set.active h4:nth-child(4),
+.opacity_0_list_left_fade_set.active h5:nth-child(4),
+.opacity_0_list_left_fade_set.active figure:nth-child(4) {
+  animation: fadein_sc_left 0.75s ease 1.4s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(5),
+.opacity_0_list_left_fade_set.active section:nth-child(5),
+.opacity_0_list_left_fade_set.active div:nth-child(5),
+.opacity_0_list_left_fade_set.active p:nth-child(5),
+.opacity_0_list_left_fade_set.active h2:nth-child(5),
+.opacity_0_list_left_fade_set.active h3:nth-child(5),
+.opacity_0_list_left_fade_set.active h4:nth-child(5),
+.opacity_0_list_left_fade_set.active h5:nth-child(5),
+.opacity_0_list_left_fade_set.active figure:nth-child(5) {
+  animation: fadein_sc_left 0.75s ease 1.75s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(6),
+.opacity_0_list_left_fade_set.active section:nth-child(6),
+.opacity_0_list_left_fade_set.active div:nth-child(6),
+.opacity_0_list_left_fade_set.active p:nth-child(6),
+.opacity_0_list_left_fade_set.active h2:nth-child(6),
+.opacity_0_list_left_fade_set.active h3:nth-child(6),
+.opacity_0_list_left_fade_set.active h4:nth-child(6),
+.opacity_0_list_left_fade_set.active h5:nth-child(6),
+.opacity_0_list_left_fade_set.active figure:nth-child(6) {
+  animation: fadein_sc_left 0.75s ease 2.1s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(7),
+.opacity_0_list_left_fade_set.active section:nth-child(7),
+.opacity_0_list_left_fade_set.active div:nth-child(7),
+.opacity_0_list_left_fade_set.active p:nth-child(7),
+.opacity_0_list_left_fade_set.active h2:nth-child(7),
+.opacity_0_list_left_fade_set.active h3:nth-child(7),
+.opacity_0_list_left_fade_set.active h4:nth-child(7),
+.opacity_0_list_left_fade_set.active h5:nth-child(7),
+.opacity_0_list_left_fade_set.active figure:nth-child(7) {
+  animation: fadein_sc_left 0.75s ease 2.45s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(8),
+.opacity_0_list_left_fade_set.active section:nth-child(8),
+.opacity_0_list_left_fade_set.active div:nth-child(8),
+.opacity_0_list_left_fade_set.active p:nth-child(8),
+.opacity_0_list_left_fade_set.active h2:nth-child(8),
+.opacity_0_list_left_fade_set.active h3:nth-child(8),
+.opacity_0_list_left_fade_set.active h4:nth-child(8),
+.opacity_0_list_left_fade_set.active h5:nth-child(8),
+.opacity_0_list_left_fade_set.active figure:nth-child(8) {
+  animation: fadein_sc_left 0.75s ease 2.8s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(9),
+.opacity_0_list_left_fade_set.active section:nth-child(9),
+.opacity_0_list_left_fade_set.active div:nth-child(9),
+.opacity_0_list_left_fade_set.active p:nth-child(9),
+.opacity_0_list_left_fade_set.active h2:nth-child(9),
+.opacity_0_list_left_fade_set.active h3:nth-child(9),
+.opacity_0_list_left_fade_set.active h4:nth-child(9),
+.opacity_0_list_left_fade_set.active h5:nth-child(9),
+.opacity_0_list_left_fade_set.active figure:nth-child(9) {
+  animation: fadein_sc_left 0.75s ease 3.15s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(10),
+.opacity_0_list_left_fade_set.active section:nth-child(10),
+.opacity_0_list_left_fade_set.active div:nth-child(10),
+.opacity_0_list_left_fade_set.active p:nth-child(10),
+.opacity_0_list_left_fade_set.active h2:nth-child(10),
+.opacity_0_list_left_fade_set.active h3:nth-child(10),
+.opacity_0_list_left_fade_set.active h4:nth-child(10),
+.opacity_0_list_left_fade_set.active h5:nth-child(10),
+.opacity_0_list_left_fade_set.active figure:nth-child(10) {
+  animation: fadein_sc_left 0.75s ease 3.5s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(11),
+.opacity_0_list_left_fade_set.active section:nth-child(11),
+.opacity_0_list_left_fade_set.active div:nth-child(11),
+.opacity_0_list_left_fade_set.active p:nth-child(11),
+.opacity_0_list_left_fade_set.active h2:nth-child(11),
+.opacity_0_list_left_fade_set.active h3:nth-child(11),
+.opacity_0_list_left_fade_set.active h4:nth-child(11),
+.opacity_0_list_left_fade_set.active h5:nth-child(11),
+.opacity_0_list_left_fade_set.active figure:nth-child(11) {
+  animation: fadein_sc_left 0.75s ease 3.85s forwards alternate;
+}
+.opacity_0_list_left_fade_set.active > li:nth-child(12),
+.opacity_0_list_left_fade_set.active section:nth-child(12),
+.opacity_0_list_left_fade_set.active div:nth-child(12),
+.opacity_0_list_left_fade_set.active p:nth-child(12),
+.opacity_0_list_left_fade_set.active h2:nth-child(12),
+.opacity_0_list_left_fade_set.active h3:nth-child(12),
+.opacity_0_list_left_fade_set.active h4:nth-child(12),
+.opacity_0_list_left_fade_set.active h5:nth-child(12),
+.opacity_0_list_left_fade_set.active figure:nth-child(12) {
+  animation: fadein_sc_left 0.75s ease 4.2s forwards alternate;
+}
+
+.opacity_0_list_right_fade_set > li,
+.opacity_0_list_right_fade_set section,
+.opacity_0_list_right_fade_set div,
+.opacity_0_list_right_fade_set tr,
+.opacity_0_list_right_fade_set figure {
+  transform: translate3d(-10px, 0px, 0px);
+  opacity: 0;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(1),
+.opacity_0_list_right_fade_set.active section:nth-child(1),
+.opacity_0_list_right_fade_set.active div:nth-child(1),
+.opacity_0_list_right_fade_set.active p:nth-child(1),
+.opacity_0_list_right_fade_set.active h2:nth-child(1),
+.opacity_0_list_right_fade_set.active h3:nth-child(1),
+.opacity_0_list_right_fade_set.active h4:nth-child(1),
+.opacity_0_list_right_fade_set.active h5:nth-child(1),
+.opacity_0_list_right_fade_set.active figure:nth-child(1) {
+  animation: fadein_sc_right 0.75s ease 0.35s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(2),
+.opacity_0_list_right_fade_set.active section:nth-child(2),
+.opacity_0_list_right_fade_set.active div:nth-child(2),
+.opacity_0_list_right_fade_set.active p:nth-child(2),
+.opacity_0_list_right_fade_set.active h2:nth-child(2),
+.opacity_0_list_right_fade_set.active h3:nth-child(2),
+.opacity_0_list_right_fade_set.active h4:nth-child(2),
+.opacity_0_list_right_fade_set.active h5:nth-child(2),
+.opacity_0_list_right_fade_set.active figure:nth-child(2) {
+  animation: fadein_sc_right 0.75s ease 0.7s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(3),
+.opacity_0_list_right_fade_set.active section:nth-child(3),
+.opacity_0_list_right_fade_set.active div:nth-child(3),
+.opacity_0_list_right_fade_set.active p:nth-child(3),
+.opacity_0_list_right_fade_set.active h2:nth-child(3),
+.opacity_0_list_right_fade_set.active h3:nth-child(3),
+.opacity_0_list_right_fade_set.active h4:nth-child(3),
+.opacity_0_list_right_fade_set.active h5:nth-child(3),
+.opacity_0_list_right_fade_set.active figure:nth-child(3) {
+  animation: fadein_sc_right 0.75s ease 1.05s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(4),
+.opacity_0_list_right_fade_set.active section:nth-child(4),
+.opacity_0_list_right_fade_set.active div:nth-child(4),
+.opacity_0_list_right_fade_set.active p:nth-child(4),
+.opacity_0_list_right_fade_set.active h2:nth-child(4),
+.opacity_0_list_right_fade_set.active h3:nth-child(4),
+.opacity_0_list_right_fade_set.active h4:nth-child(4),
+.opacity_0_list_right_fade_set.active h5:nth-child(4),
+.opacity_0_list_right_fade_set.active figure:nth-child(4) {
+  animation: fadein_sc_right 0.75s ease 1.4s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(5),
+.opacity_0_list_right_fade_set.active section:nth-child(5),
+.opacity_0_list_right_fade_set.active div:nth-child(5),
+.opacity_0_list_right_fade_set.active p:nth-child(5),
+.opacity_0_list_right_fade_set.active h2:nth-child(5),
+.opacity_0_list_right_fade_set.active h3:nth-child(5),
+.opacity_0_list_right_fade_set.active h4:nth-child(5),
+.opacity_0_list_right_fade_set.active h5:nth-child(5),
+.opacity_0_list_right_fade_set.active figure:nth-child(5) {
+  animation: fadein_sc_right 0.75s ease 1.75s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(6),
+.opacity_0_list_right_fade_set.active section:nth-child(6),
+.opacity_0_list_right_fade_set.active div:nth-child(6),
+.opacity_0_list_right_fade_set.active p:nth-child(6),
+.opacity_0_list_right_fade_set.active h2:nth-child(6),
+.opacity_0_list_right_fade_set.active h3:nth-child(6),
+.opacity_0_list_right_fade_set.active h4:nth-child(6),
+.opacity_0_list_right_fade_set.active h5:nth-child(6),
+.opacity_0_list_right_fade_set.active figure:nth-child(6) {
+  animation: fadein_sc_right 0.75s ease 2.1s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(7),
+.opacity_0_list_right_fade_set.active section:nth-child(7),
+.opacity_0_list_right_fade_set.active div:nth-child(7),
+.opacity_0_list_right_fade_set.active p:nth-child(7),
+.opacity_0_list_right_fade_set.active h2:nth-child(7),
+.opacity_0_list_right_fade_set.active h3:nth-child(7),
+.opacity_0_list_right_fade_set.active h4:nth-child(7),
+.opacity_0_list_right_fade_set.active h5:nth-child(7),
+.opacity_0_list_right_fade_set.active figure:nth-child(7) {
+  animation: fadein_sc_right 0.75s ease 2.45s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(8),
+.opacity_0_list_right_fade_set.active section:nth-child(8),
+.opacity_0_list_right_fade_set.active div:nth-child(8),
+.opacity_0_list_right_fade_set.active p:nth-child(8),
+.opacity_0_list_right_fade_set.active h2:nth-child(8),
+.opacity_0_list_right_fade_set.active h3:nth-child(8),
+.opacity_0_list_right_fade_set.active h4:nth-child(8),
+.opacity_0_list_right_fade_set.active h5:nth-child(8),
+.opacity_0_list_right_fade_set.active figure:nth-child(8) {
+  animation: fadein_sc_right 0.75s ease 2.8s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(9),
+.opacity_0_list_right_fade_set.active section:nth-child(9),
+.opacity_0_list_right_fade_set.active div:nth-child(9),
+.opacity_0_list_right_fade_set.active p:nth-child(9),
+.opacity_0_list_right_fade_set.active h2:nth-child(9),
+.opacity_0_list_right_fade_set.active h3:nth-child(9),
+.opacity_0_list_right_fade_set.active h4:nth-child(9),
+.opacity_0_list_right_fade_set.active h5:nth-child(9),
+.opacity_0_list_right_fade_set.active figure:nth-child(9) {
+  animation: fadein_sc_right 0.75s ease 3.15s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(10),
+.opacity_0_list_right_fade_set.active section:nth-child(10),
+.opacity_0_list_right_fade_set.active div:nth-child(10),
+.opacity_0_list_right_fade_set.active p:nth-child(10),
+.opacity_0_list_right_fade_set.active h2:nth-child(10),
+.opacity_0_list_right_fade_set.active h3:nth-child(10),
+.opacity_0_list_right_fade_set.active h4:nth-child(10),
+.opacity_0_list_right_fade_set.active h5:nth-child(10),
+.opacity_0_list_right_fade_set.active figure:nth-child(10) {
+  animation: fadein_sc_right 0.75s ease 3.5s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(11),
+.opacity_0_list_right_fade_set.active section:nth-child(11),
+.opacity_0_list_right_fade_set.active div:nth-child(11),
+.opacity_0_list_right_fade_set.active p:nth-child(11),
+.opacity_0_list_right_fade_set.active h2:nth-child(11),
+.opacity_0_list_right_fade_set.active h3:nth-child(11),
+.opacity_0_list_right_fade_set.active h4:nth-child(11),
+.opacity_0_list_right_fade_set.active h5:nth-child(11),
+.opacity_0_list_right_fade_set.active figure:nth-child(11) {
+  animation: fadein_sc_right 0.75s ease 3.85s forwards alternate;
+}
+.opacity_0_list_right_fade_set.active > li:nth-child(12),
+.opacity_0_list_right_fade_set.active section:nth-child(12),
+.opacity_0_list_right_fade_set.active div:nth-child(12),
+.opacity_0_list_right_fade_set.active p:nth-child(12),
+.opacity_0_list_right_fade_set.active h2:nth-child(12),
+.opacity_0_list_right_fade_set.active h3:nth-child(12),
+.opacity_0_list_right_fade_set.active h4:nth-child(12),
+.opacity_0_list_right_fade_set.active h5:nth-child(12),
+.opacity_0_list_right_fade_set.active figure:nth-child(12) {
+  animation: fadein_sc_right 0.75s ease 4.2s forwards alternate;
+}
+
 /*下線を引く*/
 .buttonWap {
   margin: 2% auto;
@@ -1622,6 +2404,136 @@ body {
     transform: translateX(0px) rotate(0deg);
   }
 }
+/* .slide-img の背景画像の設定を追加 */
+.swiper01 > .swiper-slide {
+  display: flex;
+  width: 100% !important;
+}
+
+.swiper01 .slide-img {
+  /* 小画面 */
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: visible;
+  width: clamp(355px, 60%, 1144px);
+  height: 800px;
+  margin: 0 0 0 auto;
+}
+
+.swiper01 .slide-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 10vw;
+  flex-direction: column;
+  height: calc(100vh - 6.4vw);
+  align-items: flex-start;
+}
+
+.from_bottomwap {
+  color: #333;
+  font-size: 30px;
+}
+
+.fromBottom02wap {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.from_bottomwap {
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  position: relative;
+}
+
+.swiper01 .swiper-slide-active .from_bottomwap {
+  animation: fromBottom 0.25s 1 normal both 0.25s;
+}
+
+.fromBottom02wap {
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  position: relative;
+}
+
+.swiper01 .swiper-slide-active .fromBottom02wap {
+  animation: fromBottom02 0.25s 1 normal both 0.5s;
+}
+
+/* 文字のアニメーション */
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes fromBottom02 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.swiper01 .swiper-slide-active .slide-img {
+  /* img を削除 */
+  animation: hidden 0.5s ease-in-out 0s 1 normal both;
+}
+
+@keyframes hidden {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: clamp(355px, 60%, 1144px);
+  }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: clamp(350px, 39%, 745px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px 0;
+}
+
+/*サムネイル付きスライダ*/
+.swipperWap02 .slider .swiper-slide {
+  display: flex;
+}
+
+.swipper-wapper {
+  margin: 0 auto;
+}
+
+.slider-thumbnail .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  width: 33.3333333333%;
+}
+
+.slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
 .bg_3C7A53 {
   background: #3C7A53;
 }
@@ -2171,7 +3083,6 @@ and open the template in the editor.
 }
 .flip-in-x {
   animation-name: flip-in-x;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-out-x {
@@ -2186,7 +3097,6 @@ and open the template in the editor.
 }
 .flip-out-x {
   animation-name: flip-out-x;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-in-x-nr {
@@ -2201,7 +3111,6 @@ and open the template in the editor.
 }
 .flip-in-x-nr {
   animation-name: flip-in-x-nr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-out-x-nr {
@@ -2216,7 +3125,6 @@ and open the template in the editor.
 }
 .flip-out-x-nr {
   animation-name: flip-out-x-nr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-in-x-fr {
@@ -2231,7 +3139,6 @@ and open the template in the editor.
 }
 .flip-in-x-fr {
   animation-name: flip-in-x-fr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-out-x-fr {
@@ -2246,7 +3153,6 @@ and open the template in the editor.
 }
 .flip-out-x-fr {
   animation-name: flip-out-x-fr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-in-y {
@@ -2261,7 +3167,6 @@ and open the template in the editor.
 }
 .flip-in-y {
   animation-name: flip-in-y;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-out-y {
@@ -2276,7 +3181,6 @@ and open the template in the editor.
 }
 .flip-out-y {
   animation-name: flip-out-y;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-in-y-nr {
@@ -2291,7 +3195,6 @@ and open the template in the editor.
 }
 .flip-in-y-nr {
   animation-name: flip-in-y-nr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-out-y-nr {
@@ -2306,7 +3209,6 @@ and open the template in the editor.
 }
 .flip-out-y-nr {
   animation-name: flip-out-y-nr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-in-y-fr {
@@ -2321,7 +3223,6 @@ and open the template in the editor.
 }
 .flip-in-y-fr {
   animation-name: flip-in-y-fr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes flip-out-y-fr {
@@ -2336,7 +3237,6 @@ and open the template in the editor.
 }
 .flip-out-y-fr {
   animation-name: flip-out-y-fr;
-  -webkit-backface-visibility: visible !important;
   backface-visibility: visible !important;
 }
 @keyframes zoom-in {
@@ -3171,6 +4071,231 @@ and open the template in the editor.
   }
 }
 /* ==========================================================================
+use＆nameSpace
+========================================================================== */
+.lpWaps {
+  background: #000;
+}
+
+#header.alt {
+  position: sticky;
+}
+
+svg {
+  overflow: auto;
+}
+
+.slick_thumb .slick-track {
+  transform: unset !important;
+}
+
+body {
+  cursor: pointer;
+}
+
+.secmargin {
+  margin: 10% auto;
+}
+
+h1 {
+  font-size: 20px;
+  line-height: 1.7;
+  border-bottom: 1px solid #333;
+  font-weight: 600;
+  padding-top: 0px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1099px) {
+  h1 {
+    font-size: 1.8198362147vw;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h1 {
+    padding: 0% 0% 0.9% 0%;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h1 {
+    margin-top: 1.81%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  h1 {
+    font-size: 5.3333333333vw;
+  }
+}
+
+h2 {
+  font-size: 18px;
+  line-height: 1.7;
+  background: #ccc;
+  font-weight: 600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1099px) {
+  h2 {
+    font-size: 1.6378525933vw;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h2 {
+    padding: 0.45% 0.45% 0.45% 0.45%;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h2 {
+    margin-top: 1.81%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  h2 {
+    font-size: 4.8vw;
+  }
+}
+
+h3 {
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 600;
+  border-left: 5px solid #333;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 0px;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1099px) {
+  h3 {
+    font-size: 1.6378525933vw;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h3 {
+    padding: 0.45% 0% 0.45% 0.9%;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h3 {
+    margin-top: 1.81%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  h3 {
+    font-size: 4.8vw;
+  }
+}
+
+h4 {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1099px) {
+  h4 {
+    font-size: 1.4558689718vw;
+  }
+}
+@media screen and (max-width: 1099px) {
+  h4 {
+    margin-top: 1.81%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  h4 {
+    font-size: 4.2666666667vw;
+  }
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1099px) {
+  p {
+    font-size: 1.2738853503vw;
+  }
+}
+@media screen and (max-width: 1099px) {
+  p {
+    margin-top: 1.81%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  p {
+    font-size: 3.7333333333vw;
+  }
+}
+
+li {
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1099px) {
+  li {
+    font-size: 1.2738853503vw;
+  }
+}
+@media screen and (max-width: 1099px) {
+  li {
+    margin-top: 0.9%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media screen and (max-width: 767px) and (max-width: 767px) {
+  li {
+    font-size: 3.7333333333vw;
+  }
+}
+
+/* ==========================================================================
 Reset
 ========================================================================== */
 /* ==========================================================================
@@ -3187,4 +4312,7 @@ Layout
 ========================================================================== */
 /* ==========================================================================
 Component
+========================================================================== */
+/* ==========================================================================
+Layout
 ========================================================================== *//*# sourceMappingURL=common.css.map */

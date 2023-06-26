@@ -1,18 +1,16 @@
  gsap.registerPlugin(ScrollTrigger); 
 
+document.querySelectorAll("li").forEach((el, index) => {
+	    ScrollTrigger.create({
+	        trigger: el,
+	        id: index+1,
+	        start: 'top 50%',
+	        toggleClass: {targets: el, className: "active"},
+          markers: true,
+	    });
+  });
 const custom_anime = gsap.timeline({
-  ScrollTrigger: {
-    trigger: ".jsleft", //アニメーションが始まるトリガーとなる要素
-    start: 0,
-    scrub: true,
-
-    opacity:0,
-    markers: true
-  },
-  stagger: {
-    from: "random", //左からアニメーション start、center、edges、random、endが指定できる
-    //amount: 0.1 //0.1秒ズラしてアニメーション
-  }
+  
 });
 custom_anime.to('.l_jsli01', //アニメーションする要素
   { keyframes: [

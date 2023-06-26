@@ -10,22 +10,34 @@
 </head>
 
 <body>
+    <style>
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 
+    .endFig {
+        width: 370px;
+    }
+    </style>
     <div class="wapper">
-        <figure class="endFig">
-            <img loading="lazy" src="img/samenyan.jpg" width="" height="height">
-        </figure>
-        <figure class="nekoselebuFig">
-            <img loading="lazy" src="img/fixed.jpg">
-        </figure>
-        <figure class="nekoselebuFig">
-            <img loading="lazy" src="img/nyanpointer.jpg">
+        <figure class="svgFig">
+            <img loading="lazy" src="img/iconsvg.svg" width="150" height="150">
         </figure>
         <figure class="endFig">
-            <img loading="lazy" src="img/nekoselebu.jpg">
+            <img loading="lazy" src="img/samenyan.jpg" width="1000" height="210">
         </figure>
         <figure class="nekoselebuFig">
-            <img loading="lazy" src="img/baki.jpg">
+            <img loading="lazy" src="img/fixed.jpg" width="300" height="586">
+        </figure>
+        <figure class="nyanpointer">
+            <img loading="lazy" src="img/nyanpointer.jpg" width="1000" height="125">
+        </figure>
+        <figure class="nekoselebu">
+            <img loading="lazy" src="img/nekoselebu.jpg" width="370" height="123">
+        </figure>
+        <figure class="baki">
+            <img loading="lazy" src="img/baki.jpg" width="1219" height="944">
         </figure>
 
     </div>

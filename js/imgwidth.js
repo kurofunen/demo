@@ -49,17 +49,18 @@ const imgs = document.getElementsByTagName('img');
 
 for (const img of imgs) {
     const src = img.getAttribute('src');
+    if (src.endsWith('.svg')) {//endsWith() 文字列が引数で指定された文字列で終わるかを判定してtrueかfalseを返す
+        continue;
+    }
     myFunc(src)
         .then(function (res) {
             img.setAttribute('width', Math.ceil(res.width));
             img.setAttribute('height', Math.ceil(res.height));
            
-            console.log(img);
-            if (res.parentNode < Math.ceil(res.width)) {
-                img.style.maxWidth = '100%';
-                img.style.height = 'auto';
-                
-            }
+            // if (res.parentNode < Math.ceil(res.width)) {
+            //     img.style.maxWidth = '100%';
+            //     img.style.height = 'auto';  
+            // }
         })
         
     .catch(function(error){

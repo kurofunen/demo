@@ -6,9 +6,9 @@
     <script defer src="js/leaf.js"></script>
     <link rel="stylesheet" href="css/common.css?v=<?php echo date('Y-m-d-H-i-s'); ?>">
     <meta charset="utf-8" />
-    <title>グラディエント</title>
+    <title>リーフ</title>
 </head>
-<div id="content content02">
+<div class="content content02">
     <div class="leafs leafs02">
         <div class="jsleft">
             <ul class="jsul jsulLeft">

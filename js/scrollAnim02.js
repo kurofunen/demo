@@ -5,7 +5,7 @@ $(function () {
       $(window).on('load scroll resize', function () {
             var scrollTop = $(window).scrollTop();
             var showClass = 'show';
-            var timing = 100;
+            var timing = 500;
             if (scrollTop >= contentsPOS - timing){
               $(elem).addClass(showClass);
               

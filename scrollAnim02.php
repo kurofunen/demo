@@ -10,21 +10,7 @@
 </head>
 
 <body>
-    <div class="bbox">
-        <div class="fvcnt"></div>
-        <p class="eachTextAnime">これをスクロールすると、葉っぱがひらひらと落ちてきます。</p>
-    </div>
-    <div class="bbox">
-        <div class="fvcnt"></div>
-        <p class="eachTextAnime">これをスクロールすると、葉っぱがひらひらと落ちてきます。</p>
-    </div>
-    <div class="bbox">
-        <div class="fvcnt"></div>
-        <p class="eachTextAnime">これをスクロールすると、葉っぱがひらひらと落ちてきます。</p>
-    </div>
-    <section class="box">
-        BBBBB
-    </section>
+
     <section class="content">
         <div id="content01" class="contents">
             <div id="content01_bg" class="background"></div>

@@ -1,16 +1,3 @@
-//let mojipoyo = $(".mojipoyoH2");
-//mojipoyo.each(function (i, elem) {
-//    let position = $(elem).offset().top;
-//    $(window).on("load scroll", function () {
-//        let scrollTop = $(window).scrollTop();
-//        let winHeight = $(window).height();
-//        if (scrollTop >= position - winHeight) {
-//            $(elem).addClass("active");
-//        } else {
-//            $(elem).removeClass("active");
-//        }  
-//    });
-//});
 
 (window.onload = function() {
     $('.mojipoyoH2_01').addClass('poyoyon');
@@ -42,9 +29,24 @@
     
     $('.mojipoyoH2_010').addClass('poyoyon02');
     $('.mojipoyoH2_010').on('inview', function(event, isInView) {if (isInView) {$(this).addClass('active');} else {}});
-       
+    
+    //一覧の出方
+     $('.listLinkFig').addClass('opacity_nyoki');
+     $('.listLinkFig').on('inview', function(event, isInView) {if (isInView) {$(this).addClass('active');} else {}});
+     
+     $('.listTitle').addClass('opacity_nyokiList');
+     $('.listTitle').on('inview', function(event, isInView) {if (isInView) {$(this).addClass('active');} else {}});
+     
+    $('<span class="prefcover"></span>').prependTo('.prefcoverarea');
+    $('.prefcoverarea').addClass('opacity_pref');
+    $('.prefcoverarea').on('inview', function(event, isInView) {
+    if (isInView) {
+        $(this).addClass('active');
+        $('.prefcover').delay(500).animate( {'left': '100%'}, 'linear'); 
+    } else {}}); 
 })();
     
+
 
 
 

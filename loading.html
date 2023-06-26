@@ -3,19 +3,23 @@
 
     <head>
         <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-        <link rel="stylesheet" href="css/common.css?v=<?php echo date('Y-m-d-H-i-s'); ?>">
+    <link rel="stylesheet" href="css/common.css">
         <meta charset="utf-8" />
         <title>ローディング</title>
     </head>
 
     <body>
-        <div class="loadings">
-            <div class="wapper loadingWap">
-                <figure class="picLoadings">
-                    <img src="
-                         https://drive.google.com/uc?export=view&id=1cOnBcoRQSZvJX3NJqIOldqeSa_ikGRNu" />
-                </figure>
-            </div>
+        
+        <div class="loadings jsLoadings">
+            <figure class="picloadings"> 
+                    <img loading="lazy" src="img/sakana.svg" width="300" height="100"/>
+            </figure>
+            <div class="loadingsCover" style="display: block;"></div>
+        </div>
+        <div class="listcnt mainarea">
+            <p class="moveList1">リストで出力しよう</p>
+            <p class="moveList2">リストで出力しよう</p>
+            <p class="moveList3">リストで出力しよう</p>
         </div>
 
         <script src="js/loading.js"></script>

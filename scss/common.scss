@@ -28,6 +28,7 @@ Layout
 @use 'Layout/demo/_skew';
 @use 'Layout/demo/_scrollAnim02';
 @use 'Layout/demo/_leaf';
+@use 'Layout/demo/swipper_jimmy';
 
 /* ==========================================================================
 Component
@@ -42,6 +43,10 @@ Component
 //@use 'Component/slider';
 //@use 'Component/lightbox.min';
 
+/* ==========================================================================
+Layout
+========================================================================== */
+@use 'Layout/index/_index';
 
 
 
