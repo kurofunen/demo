@@ -1,62 +1,27 @@
 .loadings {
-	background: #fff;
-	height: 100vh;
-	width: 100%;
 	position: fixed;
 	top: 0;
 	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 9999;
+	width: 100%;
+	height: 100vh;
+	background: #fff;
+	z-index: 999;
 }
-.picloadings {
-	width: 760px;
+.loadingWap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	right: 0;
 	margin: auto;
-	display: none;
-}
-.loadingsCover {
-	background: #fff;
-	height: 100vh;
-	width: 100%;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	z-index: 99999;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	display: none;
+}
+.picLoadings {
+	width: 404px;
+	height: auto;
 }
 
-//pararaxの設定
-.SliderCotetgeDetailWapIn {
-	width: 343px;
-}
-
-.listcnt {
-	@for $var from 1 through 10 {
-		.moveList#{$var} {
-			opacity: 0;
-		}
-		&.active .moveList#{$var} {
-			$delay: 0.5*$var;
-			-webkit-animation: fadein_in 0.75s ease #{$delay}s forwards alternate;
-			animation: fadein_in 0.75s ease #{$delay}s forwards alternate;
-		}
-	}
-}
-
-//下はローディング以下の指定
-.mainarea{
-	width: 100%;
-	height: 500vh;
-	background: pink;
-	display: flex;
-	justify-items: center;
-	align-items: center;
-	flex-direction: column;
-}
 
 

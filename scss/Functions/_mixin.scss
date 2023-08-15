@@ -4,13 +4,13 @@
 Settings
 ========================================================================== */
 //■横幅の設定
-$pcSize: 1100px;
-$tabSize: 1099px;
+$pcSize: 1261px;
+$tabSize: 1260px;
 $tabTateSize: 768px; //ここは不動だと思う
 $spSize: 767px; //ここは不動だと思う
 //ここも変更してほしい
-$pcSizePxNone: 1100;
-$tabSizePxNone: 1099;
+$pcSizePxNone: 1261;
+$tabSizePxNone: 1260;
 $tabTateSizePxNone: 769; //ここは不動だと思う
 $spSizePxNone: 768; //ここは不動だと思う
 
@@ -72,11 +72,25 @@ _wapSettings
     }
 }
 
+
 /* ==========================================================================
 _widthSettings
 ========================================================================== */
+@mixin ontener_width($parentPxWidth, $pxWidth) {
+    width: $pxWidth+px;
+
+    @include mq(tab) {
+        width: floor((math.div($pxWidth, $parentPxWidth) * 10000%)) * 0.01;
+    }
+
+}
+
 @mixin ontenerWidth($parentPxWidth, $pxWidth) {
-    width: floor((math.div($pxWidth, $parentPxWidth) * 10000%)) * 0.01;
+    width: $pxWidth+px;
+
+    @include mq(tab) {
+        width: floor((math.div($pxWidth, $parentPxWidth) * 10000%)) * 0.01;
+    }
 }
 
 @mixin ontenerWVw($parentPxWidth, $pxWidth) {
@@ -383,14 +397,8 @@ _paddingSettings
 /* ==========================================================================
 fonts
 ========================================================================== */
-@mixin rs_font_size($pc_size:16px, $tab_size:1.5625vw, $sp_size:4.266666666666667vw) {
+@mixin rs_font_size($pc_size: 16px, $tab_size: 1.5625vw, $sp_size: 4.266666666666667vw) {
     font-size: $pc_size;
-
-    @if $tab_size==1.5625vw {
-        @include mq(tab) {
-            font-size: $tab_size;
-        }
-    }
 
     @include mq(tab) {
         font-size: $tab_size;
@@ -402,14 +410,40 @@ fonts
 }
 
 @mixin rsFontSize($pc_size: 0px, $tab_size: 0vw, $sp_size: 0vw) {
-    font-size: $pc_size;
-
-    @include mq(tab) {
-        font-size: (math.div($tab_size, $tabSizePxNone) * 10000vw) * 0.01;
+    @if $pc_size==0px {
+        @include mq(pc) {
+            font-size: $pc_size;
+        }
     }
 
-    @include mq(sp) {
-        font-size: (math.div($sp_size, 375) * 10000vw) * 0.01;
+    @else {
+        @include mq(pc) {
+            font-size: $pc_size+px;
+        }
+    }
+
+    @if $tab_size==0vw {
+        @include mq(tab) {
+            font-size: $tab_size;
+        }
+    }
+
+    @else {
+        @include mq(tab) {
+            font-size: (math.div($tab_size, $tabSizePxNone) * 10000vw) * 0.01;
+        }
+    }
+
+    @if $sp_size==0vw {
+        @include mq(sp) {
+            font-size: $sp_size;
+        }
+    }
+
+    @else {
+        @include mq(sp) {
+            font-size: (math.div($sp_size, 375) * 10000vw) * 0.01;
+        }
     }
 }
 
@@ -468,4 +502,57 @@ _letterspace
 @mixin letterSpacing($letterSpacing) {
     letter-spacing: (math.div($letterSpacing, 1000) * 1em);
     text-indent: -(math.div($letterSpacing, 1000) * 1em);
+}
+
+/* ==========================================================================
+ボタンタイプ
+========================================================================== */
+@mixin buttonbase() {
+    overflow: hidden;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all .3s;
+    transition: all .3s;
+
+    &::before {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+
+    &::after {
+        position: absolute;
+        z-index: -1;
+        display: block;
+        content: '';
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+}
+
+@mixin buttontype02($basebackcolor, $basebodercolor, $baseboderpx, $basetextcolor, $hoverbackcolor, $hoverbodercolor, $hovertextcolor) {
+    @include buttonbase();
+    background-color: $basebackcolor;
+    border: $baseboderpx solid $basebodercolor;
+    color: $basetextcolor;
+
+    &:hover {
+        background-color: $hoverbackcolor;
+        border-color: $hoverbodercolor;
+        color: $hovertextcolor;
+    }
 }

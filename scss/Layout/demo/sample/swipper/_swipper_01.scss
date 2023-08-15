@@ -1,0 +1,69 @@
+/* ==========================================================================
+Function
+========================================================================== */
+
+.mySwiper .swiper-slide {
+    opacity: 0.6;
+}
+
+.mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+/* ==========================================================================
+見切れるスライダ
+========================================================================== */
+
+.demo02inner {
+    overflow: hidden;
+}
+
+.card02 .swiper {
+    overflow: visible;
+}
+
+.card02 .swiper-slide {
+    width: 500px;
+}
+
+.card02 .slides {
+    overflow: hidden;
+    width: 36rem;
+    border-radius: 4px;
+
+}
+
+.card02 .slide-media {
+    padding-top: 62.5%;
+    position: relative;
+    overflow: hidden;
+}
+
+.card02 .slide-media img {
+    height: calc(100% + 16px);
+    -webkit-transform: translateY(-16px);
+    transform: translateY(-16px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card02 .slide-content {
+    padding: 3.2rem;
+}
+
+.card02 .slide-date {
+    font-size: 1.2rem;
+    line-height: 1;
+    display: block;
+}
+
+.card02 .slide-title {
+    line-height: 1.6;
+    height: 3.2em;
+    margin-top: 1.6rem;
+}

@@ -1,0 +1,166 @@
+/* ==========================================================================
+Function
+========================================================================== */
+
+@use "../../../Functions/_mixin"as mi;
+
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+
+#menuBtm_05 {
+    .mainFv {
+        height: 200vh;
+    }
+
+    &.base_header {
+        position: sticky;
+        left: 0;
+        width: 100%;
+        top: 0;
+        z-index: 99;
+
+        @include mi.mq(sp) {}
+    }
+
+    .headerSpWap {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    .headerSpFx {
+        padding: 10px 10px;
+        width: 100%;
+        align-items: center;
+
+        @include mi.mq(sp) {}
+    }
+
+    .logoHeaderSp {
+        display: block;
+        @include mi.rsFontSize(20, 20, 20);
+        text-decoration: none;
+        color: #FFF;
+    }
+
+
+    /* ==========================================================================
+メニューボタンの設定
+========================================================================== */
+    .btmHeaderSp {
+        width: fit-content;
+        cursor: pointer;
+
+        @include mi.mq(sp) {}
+    }
+
+    .btmHeaderSpWap {
+        width: 33px;
+        margin: auto;
+        height: 22px;
+        position: relative;
+
+        @include mi.mq(sp) {}
+    }
+
+    .brdHeaderSp {
+        width: 100%;
+        height: 2px;
+        background: #FFF;
+        display: block;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    }
+
+    .btmHeaderSp {
+        .brdHeaderSp01 {
+            top: 0px;
+        }
+
+        .brdHeaderSp02 {
+            top: 11px;
+        }
+
+        .brdHeaderSp03 {
+            top: 21px;
+        }
+    }
+
+    .btmHeaderSp.on {
+        .brdHeaderSp01 {
+            top: 11px;
+            transform: rotate(-45deg);
+        }
+
+        .brdHeaderSp02 {
+            opacity: 0;
+        }
+
+        .brdHeaderSp03 {
+            top: 11px;
+            transform: rotate(45deg);
+        }
+    }
+
+
+    /* ==========================================================================
+    ナビメニューの設定
+    ========================================================================== */
+    .navHeaderSp {
+        width: 305px;
+        height: 100vh;
+        margin: 0 0 0 auto;
+        padding: 32px 0 30px 0;
+        position: fixed;
+        right: 0;
+        z-index: 999;
+        top: 42px;
+        transition-duration: 0.25s;
+        background: #F6F4EE;
+        display: none;
+    }
+
+    .ulNavHeaderSp {
+        width: 245px;
+        margin: auto;
+    }
+
+    .liNavHeaderSp {
+        border-bottom: 1px solid #0B090E;
+    }
+
+    .liNavHeaderSp01 {
+        border-top: 1px solid #0B090E;
+    }
+
+    .btmNavHeaderSp {
+        padding: 11% 4.5% 10% 5%;
+        text-decoration: none;
+        color: #0B090E;
+    }
+
+    .h3NavHeaderSp {
+        @include mi.ontenerWidth(222, 120);
+        @include mi.rsFontSize(15, 15, 15);
+        line-height: 0.7;
+        white-space: nowrap;
+        letter-spacing: -0.04em;
+
+    }
+
+    .txtNavHeader {
+        @include mi.ontenerWidth(222, 100);
+        @include mi.rsFontSize(12, 12, 12);
+        @include mi.lineheight(12, 12);
+        text-align: right;
+        white-space: nowrap;
+        letter-spacing: -0.06em;
+    }
+
+    .btmContactSp {
+        width: 245px;
+        @include mi.marginPercent(305, 127, auto, 0, auto);
+    }
+}
