@@ -22,10 +22,10 @@ Layout
 ========================================================================== */
 @use 'Layout/demo/_loading';
 @use 'Layout/demo/_lightboxes';
-@use 'Layout/demo/_mojipoyo';
 @use 'Layout/demo/_mihomon_grade';
 @use 'Layout/demo/_slider';
 @use 'Layout/demo/_skew';
+
 
 
 /* ==========================================================================
@@ -37,12 +37,17 @@ Component
 @use 'Component/_parallax';
 @use 'Component/_lightbox.min';
 
+
 /* ==========================================================================
-demo
+demo(メニュー)
 ========================================================================== */
-@use 'Layout/demo/sample/_menuBtm';
-// @use 'Layout/demo/sample/menuBtm_01';
-// @use 'Layout/demo/sample/menuBtm_02';
-// @use 'Layout/demo/sample/menuBtm_03';
-// @use 'Layout/demo/sample/menuBtm_04';
-//@use 'Layout/demo/sample/_menuBtm_05';
+@use 'Layout/demo/sample/menuBtm/_menuBtm';
+
+/* ==========================================================================
+demo(swipper)
+========================================================================== */
+@use 'Layout/demo/sample/swipper/_swipper';
+/* ==========================================================================
+demo(アニメーション)
+========================================================================== */
+@use 'Layout/demo/sample/animation/_animation';

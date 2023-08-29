@@ -10,12 +10,86 @@ Function
     opacity: 1;
 }
 
+.mySwiper2 img {
+    width: 100%;
+}
+
+.mySwiper2 {
+
+    .swiper-button-next {
+        width: 40px;
+        height: 40px;
+
+        &::before {
+            content: "";
+            background: #000;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition-duration: 0.2s;
+            border-radius: 50px;
+
+        }
+
+        &::after {
+            background: url(../img/arrow_next.svg) no-repeat center center;
+            background-size: auto 100%;
+            width: 25px;
+            height: 13px;
+            color: transparent;
+            position: absolute;
+        }
+
+        &:hover {
+            &::before {
+                transform: scale(1.2);
+
+            }
+        }
+    }
+
+    .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+
+        &::before {
+            content: "";
+            background: #000;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            transition-duration: 0.2s;
+            border-radius: 50px;
+
+        }
+
+        &::after {
+            background: url(../img/arrow_prev.svg) no-repeat center center;
+            background-size: auto 100%;
+            width: 25px;
+            height: 13px;
+            color: transparent;
+            position: absolute;
+        }
+
+        &:hover {
+            &::before {
+                transform: scale(1.2);
+
+            }
+        }
+    }
+}
+
+
 /* ==========================================================================
 見切れるスライダ
 ========================================================================== */
 
 .demo02inner {
     overflow: hidden;
+    width: 80%;
+    margin: 0 0 0 auto;
 }
 
 .card02 .swiper {
@@ -23,7 +97,7 @@ Function
 }
 
 .card02 .swiper-slide {
-    width: 500px;
+    width: 600px;
 }
 
 .card02 .slides {
