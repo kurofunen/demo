@@ -1,0 +1,99 @@
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+@use "../../../../Functions/mixin"as mi;
+
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+
+.bgIndexPrice {
+    background: url(../img/scroll/bgIndexPricePc.jpg) no-repeat top center;
+    background-size: cover;
+    background-attachment: fixed;
+
+    @include mi.mq(sp) {
+        background: unset;
+        position: relative;
+        overflow: hidden;
+    }
+}
+
+.bgIndexPriceSp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.indexPrice {
+    margin: 22.6% 0% 0% 0%;
+    padding: 22.5% 0% 21.5% 0%;
+
+    @include mi.mq(sp) {
+        padding: 72.5% 0% 91.5% 0%;
+    }
+}
+
+.indexPriceWap {}
+
+.indexPriceLxn {
+    width: 98%;
+    margin: 0 auto;
+}
+
+.secPriceTitle {
+    position: relative;
+}
+
+.leftBrdIndexPrice {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #FFF;
+    right: 71%;
+
+    @include mi.mq(sp) {
+        right: 72.4%;
+    }
+}
+
+.rightBrdIndexPrice {
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    display: block;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    background: #FFF;
+    left: 71%;
+
+    @include mi.mq(sp) {
+        left: 72.4%;
+    }
+}
+
+.h1IndexPriceLxn {
+    font-size: 5em;
+    color: #FFF;
+
+    @include mi.mq(sp) {
+        font-size: 2em;
+    }
+}
+
+.txtIndexPriceLxn {
+    font-size: 2em;
+    margin: 2% auto 0 auto;
+    color: #FFF;
+
+    @include mi.mq(sp) {
+        font-size: 1.2em;
+    }
+}
