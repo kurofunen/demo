@@ -1,4 +1,7 @@
 @charset "UTF-8";
+/* ==========================================================================
+Reset
+========================================================================== */
 /*
 html5doctor.com Reset Stylesheet
 v1.6.1
@@ -27,12 +30,12 @@ time, mark, audio, video {
   background: transparent;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 body {
   line-height: 1;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 article, aside, details, figcaption, figure,
@@ -106,6 +109,12 @@ input, select {
 }
 
 /* ==========================================================================
+Rules
+========================================================================== */
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
 Settings
 ========================================================================== */
 /* ==========================================================================
@@ -143,9 +152,6 @@ _letterspace
 ========================================================================== */
 /* ==========================================================================
 ボタンタイプ
-========================================================================== */
-/* ==========================================================================
-use＆nameSpace
 ========================================================================== */
 /* ==========================================================================
 Rules
@@ -218,12 +224,27 @@ svg {
   }
 }
 
+@media screen and (max-width: 767px) {
+  body {
+    padding: 0 0 16.5333333333vw 0;
+  }
+}
+
 .pc_order_0 {
   order: 0;
 }
 @media screen and (max-width: 767px) {
   .pc_order_0 {
     order: unset;
+  }
+}
+
+.sp_order_0 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_0 {
+    order: 0;
   }
 }
 
@@ -240,6 +261,15 @@ svg {
   }
 }
 
+.sp_order_1 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_1 {
+    order: 1;
+  }
+}
+
 .fw_100 {
   font-wieght: 100;
 }
@@ -250,6 +280,15 @@ svg {
 @media screen and (max-width: 767px) {
   .pc_order_2 {
     order: unset;
+  }
+}
+
+.sp_order_2 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_2 {
+    order: 2;
   }
 }
 
@@ -266,6 +305,15 @@ svg {
   }
 }
 
+.sp_order_3 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_3 {
+    order: 3;
+  }
+}
+
 .fw_300 {
   font-wieght: 300;
 }
@@ -276,6 +324,15 @@ svg {
 @media screen and (max-width: 767px) {
   .pc_order_4 {
     order: unset;
+  }
+}
+
+.sp_order_4 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_4 {
+    order: 4;
   }
 }
 
@@ -292,6 +349,15 @@ svg {
   }
 }
 
+.sp_order_5 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_5 {
+    order: 5;
+  }
+}
+
 .fw_500 {
   font-wieght: 500;
 }
@@ -302,6 +368,15 @@ svg {
 @media screen and (max-width: 767px) {
   .pc_order_6 {
     order: unset;
+  }
+}
+
+.sp_order_6 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_6 {
+    order: 6;
   }
 }
 
@@ -318,6 +393,15 @@ svg {
   }
 }
 
+.sp_order_7 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_7 {
+    order: 7;
+  }
+}
+
 .fw_700 {
   font-wieght: 700;
 }
@@ -331,62 +415,17 @@ svg {
   }
 }
 
+.sp_order_8 {
+  order: unset;
+}
+@media screen and (max-width: 767px) {
+  .sp_order_8 {
+    order: 8;
+  }
+}
+
 .fw_800 {
   font-wieght: 800;
-}
-
-.ovhidden {
-  overflow: hidden;
-}
-
-a {
-  transition-duration: 0.5s;
-}
-a:hover {
-  opacity: 0.6;
-}
-
-.maincontiner {
-  margin: 10% auto;
-}
-
-.h1demo {
-  font-size: 2.5rem;
-  color: #333;
-  margin: 1% 0 2% 0;
-}
-
-.h2demo {
-  font-size: 2rem;
-  color: #333;
-  margin: 1% 0 2% 0;
-}
-
-.txtdemo {
-  padding: 0.5% 2%;
-  font-size: 1rem;
-  width: -moz-fit-content;
-  width: fit-content;
-  color: #FFF;
-  background: #333;
-  border-radius: 50px;
-  text-align: center;
-}
-
-.ulDemo {
-  width: 500px;
-  border: 1px solid #FFF8E6;
-  background: #FAFAFA;
-  padding: 1%;
-}
-
-.liDemo {
-  margin: 0 0 1.2% 0;
-}
-
-.linksDemo {
-  color: #333;
-  font-size: 1rem;
 }
 
 .d_flex {
@@ -533,28 +572,17 @@ row
   flex-flow: row wrap;
 }
 
-/* ==========================================================================
-use＆nameSpace
-========================================================================== */
-/* ==========================================================================
-Library
-========================================================================== */
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  color: #2E362F;
-  font-weight: 400;
-}
-body img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
+  color: #333;
 }
 
 body input,
 body textarea,
 body button {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 400;
+  font-family: "Zen Kaku Gothic New", sans-serif;
+  font-weight: 500;
 }
 body h1,
 body h2,
@@ -568,9 +596,8 @@ body p {
 }
 
 #mintyou,
-.mintyou,
-.mincho {
-  font-family: "Shippori Mincho B1", serif;
+.mintyou {
+  font-family: 游明朝, "Yu Mincho", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS 明朝 E, Meiryo, serif;
 }
 
 .t_center {
@@ -582,31 +609,16 @@ body p {
   text-justify: inter-ideograph;
 }
 
-#mintyou,
-.mintyou {
-  font-family: "Hiragino Mincho ProN", "Hiragino Mincho Pro", HGS 明朝 E, Meiryo, serif;
+.kiwi {
+  font-family: "Kiwi Maru", serif;
 }
 
-.josefin {
-  font-family: "Josefin Sans", sans-serif;
-}
-
-.montserrat {
-  font-family: "Montserrat", sans-serif;
-}
-
-.tj {
-  text-indent: -9999px;
-  text-align: left;
-  overflow: hidden;
-  display: block;
-  font-size: 0.1em;
-}
-
-.cl_fff {
-  color: #FFF;
-}
-
+/* ==========================================================================
+Common
+========================================================================== */
+/* ==========================================================================
+Layout
+========================================================================== */
 .loadings {
   position: fixed;
   top: 0;
@@ -634,6 +646,9 @@ body p {
   height: auto;
 }
 
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
 /* ==========================================================================
 use＆nameSpace
 ========================================================================== */
@@ -691,209 +706,6 @@ LAYOUT
   margin: 0 0 0 auto;
 }
 
-.mojipoyoBox {
-  margin: 20% auto;
-}
-
-.mojipoyoH2 {
-  display: flex;
-  overflow: hidden;
-}
-
-.mojipoyoH2 {
-  display: flex;
-  overflow: hidden;
-}
-.mojipoyoH2 span {
-  opacity: 0;
-  transform: translateY(50%) scale(1.2, 0.8);
-  display: block;
-}
-
-.poyoyon.active > span:nth-child(1) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.05s forwards alternate;
-}
-.poyoyon.active > span:nth-child(2) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.1s forwards alternate;
-}
-.poyoyon.active > span:nth-child(3) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.15s forwards alternate;
-}
-.poyoyon.active > span:nth-child(4) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.2s forwards alternate;
-}
-.poyoyon.active > span:nth-child(5) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.25s forwards alternate;
-}
-.poyoyon.active > span:nth-child(6) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.3s forwards alternate;
-}
-.poyoyon.active > span:nth-child(7) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.35s forwards alternate;
-}
-.poyoyon.active > span:nth-child(8) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.4s forwards alternate;
-}
-.poyoyon.active > span:nth-child(9) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.45s forwards alternate;
-}
-.poyoyon.active > span:nth-child(10) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.5s forwards alternate;
-}
-.poyoyon.active > span:nth-child(11) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.55s forwards alternate;
-}
-.poyoyon.active > span:nth-child(12) {
-  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.6s forwards alternate;
-}
-@keyframes bound {
-  0% {
-    opacity: 0;
-    transform: translateY(50%) scale(1.2, 0.8);
-  }
-  40% {
-    opacity: 1;
-    transform: translateY(-10%);
-  }
-  70% {
-    opacity: 1;
-    transform: translateY(5%) scale(1.2, 0.8);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-.poyoyon02 > span {
-  transform: translateX(0%) scale(1, 1);
-}
-.poyoyon02.active > span:nth-child(1) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.05s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(2) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.1s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(3) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.15s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(4) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.2s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(5) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.25s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(6) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.3s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(7) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.35s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(8) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.4s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(9) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.45s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(10) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.5s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(11) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.55s forwards alternate;
-}
-.poyoyon02.active > span:nth-child(12) {
-  animation: bound_rotate 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.6s forwards alternate;
-}
-@keyframes bound_rotate {
-  0% {
-    opacity: 0;
-    transform: translateX(50%) scale(1.2, 0.8);
-  }
-  40% {
-    opacity: 1;
-    transform: translateX(-10%) scale(1, 0.8);
-  }
-  70% {
-    opacity: 1;
-    transform: translateX(5%) scale(1.2, 0.8);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0%) scale(1, 1);
-  }
-}
-@keyframes bound-small {
-  0% {
-    opacity: 0;
-    transform: translateY(30%) scale(1.1, 0.9);
-  }
-  40% {
-    opacity: 1;
-    transform: translateY(-10%);
-  }
-  70% {
-    opacity: 1;
-    transform: translateY(5%) scale(1.1, 0.9);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes scale-down {
-  0% {
-    transform: scale(1.2);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-@keyframes inview-fadein {
-  0% {
-    opacity: 0;
-    transform: translateY(150%);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes fadein-content {
-  0% {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
-@keyframes speech-bubble-x {
-  0% {
-    transform: scaleX(0);
-  }
-  to {
-    transform: scaleX(1);
-  }
-}
-@keyframes speech-bubble-y {
-  0% {
-    transform: scaleY(0);
-  }
-  to {
-    transform: scaleY(1);
-  }
-}
-@keyframes fuyofuyo {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-5px);
-  }
-  to {
-    transform: translateY(0);
-  }
-}
 /*下線を引く*/
 .buttonWap {
   margin: 2% auto;
@@ -1251,6 +1063,9 @@ ul {
 use＆nameSpace
 ========================================================================== */
 /* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
 LAYOUT
 ========================================================================== */
 .fv {
@@ -1514,6 +1329,9 @@ LAYOUT
     transform: rotateY(0%) scale(1, 1);
   }
 }
+/* ==========================================================================
+Component
+========================================================================== */
 .animsition,
 .animsition-overlay {
   position: relative;
@@ -2356,6 +2174,20 @@ LAYOUT
     transform: translate3d(0px, 0px, 0px);
   }
 }
+@keyframes fadein_sc_top2 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+  }
+  70% {
+    opacity: 1;
+    transform: translate3d(0px, -10px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
 @keyframes fadein_sc_left {
   0% {
     opacity: 0;
@@ -2387,7 +2219,6 @@ LAYOUT
 .opacity_0_fade_set {
   transform: translate3d(0px, 20px, 0px);
   opacity: 0;
-  position: relative;
 }
 .opacity_0_fade_set.active {
   animation: fadein_sc_top 0.75s ease 0.35s forwards alternate;
@@ -2556,6 +2387,114 @@ LAYOUT
 .opacity_0_list_fade_set.active h5:nth-child(12),
 .opacity_0_list_fade_set.active figure:nth-child(12) {
   animation: fadein_sc_top 0.75s ease 4.2s forwards alternate;
+}
+
+.listcnt .moveList {
+  opacity: 0;
+}
+.listcnt.active .moveList:nth-child(1) {
+  animation: fadein_in 0.75s ease 0.5s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(2) {
+  animation: fadein_in 0.75s ease 1s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(3) {
+  animation: fadein_in 0.75s ease 1.5s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(4) {
+  animation: fadein_in 0.75s ease 2s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(5) {
+  animation: fadein_in 0.75s ease 2.5s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(6) {
+  animation: fadein_in 0.75s ease 3s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(7) {
+  animation: fadein_in 0.75s ease 3.5s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(8) {
+  animation: fadein_in 0.75s ease 4s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(9) {
+  animation: fadein_in 0.75s ease 4.5s forwards alternate;
+}
+.listcnt.active .moveList:nth-child(10) {
+  animation: fadein_in 0.75s ease 5s forwards alternate;
+}
+
+.listcntmainasu .moveList {
+  opacity: 0;
+}
+.listcntmainasu.active .moveList:nth-child(1) {
+  animation: fadein_sc_top2 0.75s ease-in 0.25s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(2) {
+  animation: fadein_sc_top2 0.75s ease-in 0.5s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(3) {
+  animation: fadein_sc_top2 0.75s ease-in 0.75s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(4) {
+  animation: fadein_sc_top2 0.75s ease-in 1s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(5) {
+  animation: fadein_sc_top2 0.75s ease-in 1.25s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(6) {
+  animation: fadein_sc_top2 0.75s ease-in 1.5s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(7) {
+  animation: fadein_sc_top2 0.75s ease-in 1.75s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(8) {
+  animation: fadein_sc_top2 0.75s ease-in 2s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(9) {
+  animation: fadein_sc_top2 0.75s ease-in 2.25s forwards alternate;
+}
+.listcntmainasu.active .moveList:nth-child(10) {
+  animation: fadein_sc_top2 0.75s ease-in 2.5s forwards alternate;
+}
+
+.listcntmainasuLeft .moveList {
+  opacity: 0;
+}
+.listcntmainasuLeft.active .moveList:nth-child(1) {
+  animation: fadein_sc_left 0.75s ease 0.15s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(2) {
+  animation: fadein_sc_left 0.75s ease 0.3s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(3) {
+  animation: fadein_sc_left 0.75s ease 0.45s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(4) {
+  animation: fadein_sc_left 0.75s ease 0.6s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(5) {
+  animation: fadein_sc_left 0.75s ease 0.75s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(6) {
+  animation: fadein_sc_left 0.75s ease 0.9s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(7) {
+  animation: fadein_sc_left 0.75s ease 1.05s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(8) {
+  animation: fadein_sc_left 0.75s ease 1.2s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(9) {
+  animation: fadein_sc_left 0.75s ease 1.35s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(10) {
+  animation: fadein_sc_left 0.75s ease 1.5s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(11) {
+  animation: fadein_sc_left 0.75s ease 1.65s forwards alternate;
+}
+.listcntmainasuLeft.active .moveList:nth-child(12) {
+  animation: fadein_sc_left 0.75s ease 1.8s forwards alternate;
 }
 
 .opacity_0_list_left_fade_set > li,
@@ -2840,6 +2779,34 @@ LAYOUT
   animation: fadein_sc_right 0.75s ease 4.2s forwards alternate;
 }
 
+.moveTopBtms {
+  transition: 0.5s;
+}
+.moveTopBtms:hover {
+  transform: translate(0px, -5px);
+}
+
+.scrollHarukazeFvPosta {
+  animation: pathmove 2.4s ease-in-out infinite;
+  opacity: 0;
+}
+
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 100%;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 110%;
+    opacity: 0;
+  }
+}
 .lb-loader, .lightbox {
   text-align: center;
   line-height: 0;
@@ -3034,7 +3001,15 @@ body.lb-disable-scrolling {
   cursor: pointer;
   filter: alpha(Opacity=100);
   opacity: 1;
-} /* ==========================================================================
+}
+
+/* ==========================================================================
+demo(メニュー)
+========================================================================== */
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
 Function
 ========================================================================== */
 /* ==========================================================================
@@ -3293,6 +3268,9 @@ LAYOUT
   display: none;
 }
 
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
 /* ==========================================================================
 Function
 ========================================================================== */
@@ -3616,6 +3594,9 @@ LAYOUT
 }
 
 /* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
 Function
 ========================================================================== */
 /* ==========================================================================
@@ -3846,6 +3827,9 @@ LAYOUT
   display: none;
 }
 
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
 /* ==========================================================================
 Function
 ========================================================================== */
@@ -4108,6 +4092,9 @@ LAYOUT
 }
 
 /* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
 Function
 ========================================================================== */
 /* ==========================================================================
@@ -4351,6 +4338,15 @@ LAYOUT
 }
 
 /* ==========================================================================
+demo(swipper)
+========================================================================== */
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
+Function
+========================================================================== */
+/* ==========================================================================
 Function
 ========================================================================== */
 .mySwiper .swiper-slide {
@@ -4471,24 +4467,617 @@ Function
   margin-top: 1.6rem;
 }
 
+.swiper01 > .swiper-slide {
+  display: flex;
+  width: 100% !important;
+}
+
+.swiper01 .slide-img {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: visible;
+  width: clamp(355px, 60%, 1144px);
+  height: 800px;
+  margin: 0 0 0 auto;
+}
+
+.swiper01 .slide-content {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 10vw;
+  flex-direction: column;
+  height: calc(100vh - 6.4vw);
+  align-items: flex-start;
+}
+
+.from_bottomwap {
+  color: #333;
+  font-size: 30px;
+}
+
+.fromBottom02wap {
+  color: #333;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+}
+
+.from_bottomwap {
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  position: relative;
+}
+
+.swiper01 .swiper-slide-active .from_bottomwap {
+  animation: fromBottom 0.25s 1 normal both 0.25s;
+}
+
+.fromBottom02wap {
+  transform: translate3d(0px, 20px, 0px);
+  opacity: 0;
+  position: relative;
+}
+
+.swiper01 .swiper-slide-active .fromBottom02wap {
+  animation: fromBottom02 0.25s 1 normal both 0.5s;
+}
+
+@keyframes fromBottom {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+@keyframes fromBottom02 {
+  0% {
+    opacity: 0;
+    transform: translate3d(0px, 20px, 0px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0px, 0px, 0px);
+  }
+}
+.swiper01 .swiper-slide-active .slide-img {
+  animation: hidden 0.5s ease-in-out 0s 1 normal both;
+}
+
+@keyframes hidden {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: clamp(355px, 60%, 1144px);
+  }
+}
+.swiper-container-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  width: clamp(350px, 39%, 745px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 4px 0;
+}
+
+/*サムネイル付きスライダ*/
+.swipperWap02 .slider .swiper-slide {
+  display: flex;
+}
+
+.swipper-wapper {
+  margin: 0 auto;
+}
+
+.slider-thumbnail .swiper-slide {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+  width: 33.3333333333%;
+}
+
+.slider-thumbnail .swiper-slide.swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+.swiper-slide img {
+  height: auto;
+  width: 100%;
+}
+
 /* ==========================================================================
-Reset
+demo(アニメーション)
 ========================================================================== */
 /* ==========================================================================
-Rules
+LAYAUT
+========================================================================== */
+.mojipoyoBox {
+  margin: 20% auto;
+}
+
+/* ==========================================================================
+mojipoyo
+========================================================================== */
+.mojipoyoH2 {
+  display: flex;
+  overflow: hidden;
+  font-size: 20px;
+}
+
+.mojipoyoH2 {
+  display: flex;
+  overflow: hidden;
+}
+.mojipoyoH2 span {
+  opacity: 0;
+  transform: translateY(50%) scale(1.2, 0.8);
+  display: block;
+}
+
+.poyoyon.active > span:nth-child(1) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.05s forwards alternate;
+}
+.poyoyon.active > span:nth-child(2) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.1s forwards alternate;
+}
+.poyoyon.active > span:nth-child(3) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.15s forwards alternate;
+}
+.poyoyon.active > span:nth-child(4) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.2s forwards alternate;
+}
+.poyoyon.active > span:nth-child(5) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.25s forwards alternate;
+}
+.poyoyon.active > span:nth-child(6) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.3s forwards alternate;
+}
+.poyoyon.active > span:nth-child(7) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.35s forwards alternate;
+}
+.poyoyon.active > span:nth-child(8) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.4s forwards alternate;
+}
+.poyoyon.active > span:nth-child(9) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.45s forwards alternate;
+}
+.poyoyon.active > span:nth-child(10) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.5s forwards alternate;
+}
+.poyoyon.active > span:nth-child(11) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.55s forwards alternate;
+}
+.poyoyon.active > span:nth-child(12) {
+  animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.6s forwards alternate;
+}
+@keyframes bound {
+  0% {
+    opacity: 0;
+    transform: translateY(50%) scale(1.2, 0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+  70% {
+    opacity: 1;
+    transform: translateY(5%) scale(1.2, 0.8);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.poyoyon02 > span {
+  transform: translateX(0%) scale(1, 1);
+}
+.poyoyon02.active span:nth-child(1) {
+  animation: bound_rotate 0.6s 0.05s forwards alternate;
+}
+.poyoyon02.active span:nth-child(2) {
+  animation: bound_rotate 0.6s 0.1s forwards alternate;
+}
+.poyoyon02.active span:nth-child(3) {
+  animation: bound_rotate 0.6s 0.15s forwards alternate;
+}
+.poyoyon02.active span:nth-child(4) {
+  animation: bound_rotate 0.6s 0.2s forwards alternate;
+}
+.poyoyon02.active span:nth-child(5) {
+  animation: bound_rotate 0.6s 0.25s forwards alternate;
+}
+.poyoyon02.active span:nth-child(6) {
+  animation: bound_rotate 0.6s 0.3s forwards alternate;
+}
+.poyoyon02.active span:nth-child(7) {
+  animation: bound_rotate 0.6s 0.35s forwards alternate;
+}
+.poyoyon02.active span:nth-child(8) {
+  animation: bound_rotate 0.6s 0.4s forwards alternate;
+}
+.poyoyon02.active span:nth-child(9) {
+  animation: bound_rotate 0.6s 0.45s forwards alternate;
+}
+.poyoyon02.active span:nth-child(10) {
+  animation: bound_rotate 0.6s 0.5s forwards alternate;
+}
+.poyoyon02.active span:nth-child(11) {
+  animation: bound_rotate 0.6s 0.55s forwards alternate;
+}
+.poyoyon02.active span:nth-child(12) {
+  animation: bound_rotate 0.6s 0.6s forwards alternate;
+}
+@keyframes bound_rotate {
+  0% {
+    opacity: 0;
+    transform: rotate(90deg) scale(1.2, 0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  70% {
+    opacity: 0;
+    transform: rotate(180deg) scale(0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0deg) scale(1, 1);
+  }
+}
+.poyoyon03 span {
+  transform: translateX(0%) scale(1, 1);
+}
+.poyoyon03.active span:nth-child(1) {
+  animation: scale-down 0.6s 0.05s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(2) {
+  animation: scale-down 0.6s 0.1s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(3) {
+  animation: scale-down 0.6s 0.15s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(4) {
+  animation: scale-down 0.6s 0.2s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(5) {
+  animation: scale-down 0.6s 0.25s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(6) {
+  animation: scale-down 0.6s 0.3s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(7) {
+  animation: scale-down 0.6s 0.35s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(8) {
+  animation: scale-down 0.6s 0.4s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(9) {
+  animation: scale-down 0.6s 0.45s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(10) {
+  animation: scale-down 0.6s 0.5s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(11) {
+  animation: scale-down 0.6s 0.55s forwards ease-in-out;
+}
+.poyoyon03.active span:nth-child(12) {
+  animation: scale-down 0.6s 0.6s forwards ease-in-out;
+}
+@keyframes scale-down {
+  0% {
+    opacity: 0;
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.poyoyon04.active span:nth-child(1) {
+  animation: inview-fadein 0.6s 0.05s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(2) {
+  animation: inview-fadein 0.6s 0.1s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(3) {
+  animation: inview-fadein 0.6s 0.15s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(4) {
+  animation: inview-fadein 0.6s 0.2s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(5) {
+  animation: inview-fadein 0.6s 0.25s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(6) {
+  animation: inview-fadein 0.6s 0.3s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(7) {
+  animation: inview-fadein 0.6s 0.35s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(8) {
+  animation: inview-fadein 0.6s 0.4s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(9) {
+  animation: inview-fadein 0.6s 0.45s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(10) {
+  animation: inview-fadein 0.6s 0.5s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(11) {
+  animation: inview-fadein 0.6s 0.55s forwards ease-in-out;
+}
+.poyoyon04.active span:nth-child(12) {
+  animation: inview-fadein 0.6s 0.6s forwards ease-in-out;
+}
+@keyframes inview-fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+}
+.poyoyon05 > span {
+  transform: translateX(0%) scale(1, 1);
+}
+.poyoyon05.active span:nth-child(1) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.05s forwards alternate;
+}
+.poyoyon05.active span:nth-child(2) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.1s forwards alternate;
+}
+.poyoyon05.active span:nth-child(3) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.15s forwards alternate;
+}
+.poyoyon05.active span:nth-child(4) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.2s forwards alternate;
+}
+.poyoyon05.active span:nth-child(5) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.25s forwards alternate;
+}
+.poyoyon05.active span:nth-child(6) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.3s forwards alternate;
+}
+.poyoyon05.active span:nth-child(7) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.35s forwards alternate;
+}
+.poyoyon05.active span:nth-child(8) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.4s forwards alternate;
+}
+.poyoyon05.active span:nth-child(9) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.45s forwards alternate;
+}
+.poyoyon05.active span:nth-child(10) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.5s forwards alternate;
+}
+.poyoyon05.active span:nth-child(11) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.55s forwards alternate;
+}
+.poyoyon05.active span:nth-child(12) {
+  animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.6s forwards alternate;
+}
+
+@keyframes fadein-content {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@keyframes speech-bubble-x {
+  0% {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+@keyframes speech-bubble-y {
+  0% {
+    transform: scaleY(0);
+  }
+  to {
+    transform: scaleY(1);
+  }
+}
+@keyframes fuyofuyo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+/* ==========================================================================
+画像にょきっと出す
 ========================================================================== */
 /* ==========================================================================
-Common
+文字にょきっと出す
+========================================================================== */
+.prefcoverarea {
+  overflow: hidden;
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.listUl:nth-child(1) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 1s forwards alternate;
+}
+.listUl:nth-child(2) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 2s forwards alternate;
+}
+.listUl:nth-child(3) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 3s forwards alternate;
+}
+.listUl:nth-child(4) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 4s forwards alternate;
+}
+.listUl:nth-child(5) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 5s forwards alternate;
+}
+.listUl:nth-child(6) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 6s forwards alternate;
+}
+.listUl:nth-child(7) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 7s forwards alternate;
+}
+.listUl:nth-child(8) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 8s forwards alternate;
+}
+.listUl:nth-child(9) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 9s forwards alternate;
+}
+.listUl:nth-child(10) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 10s forwards alternate;
+}
+.listUl:nth-child(11) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 11s forwards alternate;
+}
+.listUl:nth-child(12) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.33, 1, 0.68, 1) 12s forwards alternate;
+}
+
+.prefcover {
+  background: #FFF;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform-origin: left center;
+}
+
+/* ==========================================================================
+ベース
+========================================================================== */
+.prefcoverarea {
+  color: #000;
+  text-decoration: none;
+}
+
+.listLink {
+  text-decoration: none;
+}
+
+/* ==========================================================================
+use＆nameSpace
 ========================================================================== */
 /* ==========================================================================
-Layout
+use＆nameSpace
 ========================================================================== */
 /* ==========================================================================
-Component
+LAYOUT
 ========================================================================== */
-/* ==========================================================================
-demo(メニュー)
-========================================================================== */
-/* ==========================================================================
-demo(swipper)
-========================================================================== *//*# sourceMappingURL=common.css.map */
+.bgIndexPrice {
+  background: url(../img/scroll/bgIndexPricePc.jpg) no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+@media screen and (max-width: 767px) {
+  .bgIndexPrice {
+    background: unset;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+.bgIndexPriceSp {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+.indexPrice {
+  margin: 22.6% 0% 0% 0%;
+  padding: 22.5% 0% 21.5% 0%;
+}
+@media screen and (max-width: 767px) {
+  .indexPrice {
+    padding: 72.5% 0% 91.5% 0%;
+  }
+}
+
+.indexPriceLxn {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.secPriceTitle {
+  position: relative;
+}
+
+.leftBrdIndexPrice {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: #FFF;
+  right: 71%;
+}
+@media screen and (max-width: 767px) {
+  .leftBrdIndexPrice {
+    right: 72.4%;
+  }
+}
+
+.rightBrdIndexPrice {
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
+  background: #FFF;
+  left: 71%;
+}
+@media screen and (max-width: 767px) {
+  .rightBrdIndexPrice {
+    left: 72.4%;
+  }
+}
+
+.h1IndexPriceLxn {
+  font-size: 5em;
+  color: #FFF;
+}
+@media screen and (max-width: 767px) {
+  .h1IndexPriceLxn {
+    font-size: 2em;
+  }
+}
+
+.txtIndexPriceLxn {
+  font-size: 2em;
+  margin: 2% auto 0 auto;
+  color: #FFF;
+}
+@media screen and (max-width: 767px) {
+  .txtIndexPriceLxn {
+    font-size: 1.2em;
+  }
+}/*# sourceMappingURL=common.css.map */
