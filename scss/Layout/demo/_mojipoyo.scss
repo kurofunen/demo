@@ -1,26 +1,31 @@
-.mojipoyoBox{
+.mojipoyoBox {
     margin: 20% auto;
 }
-.mojipoyoH2{
-   display: flex;
-    overflow: hidden;
-}
-.mojipoyoH2{
+
+.mojipoyoH2 {
     display: flex;
     overflow: hidden;
-    span{
+}
+
+.mojipoyoH2 {
+    display: flex;
+    overflow: hidden;
+
+    span {
         opacity: 0;
         transform: translateY(50%) scale(1.2, .8);
         display: block;
     }
-} 
-.poyoyon{
-   & > span {
-    }
+}
+
+.poyoyon {
+    &>span {}
+
     &.active {
-        & > span {
+        &>span {
             @for $var from 1 through 12 {
-                $delay : 0.05*$var;
+                $delay: 0.05*$var;
+
                 &:nth-child(#{$var}) {
                     -webkit-animation: bound 0.6s cubic-bezier(.33, 1, .68, 1) #{$delay}s forwards alternate;
                     animation: bound 0.6s cubic-bezier(.33, 1, .68, 1) #{$delay}s forwards alternate;
@@ -29,19 +34,23 @@
         }
     }
 }
+
 @-webkit-keyframes bound {
     0% {
         opacity: 0;
         transform: translateY(50%) scale(1.2, .8);
     }
+
     40% {
         opacity: 1;
         transform: translateY(-10%) scale(1, .8);
     }
+
     70% {
         opacity: 1;
         transform: translateY(5%) scale(1.2, .8);
     }
+
     to {
         opacity: 1;
         transform: none;
@@ -53,28 +62,33 @@
         opacity: 0;
         transform: translateY(50%) scale(1.2, .8)
     }
+
     40% {
         opacity: 1;
         transform: translateY(-10%)
     }
+
     70% {
         opacity: 1;
         transform: translateY(5%) scale(1.2, .8)
     }
+
     to {
         opacity: 1;
         transform: none
     }
 }
 
-.poyoyon02{
-    & > span {
+.poyoyon02 {
+    &>span {
         transform: translateX(0%) scale(1, 1);
     }
+
     &.active {
-        & > span {
+        &>span {
             @for $var from 1 through 12 {
-                $delay : 0.05*$var;
+                $delay: 0.05*$var;
+
                 &:nth-child(#{$var}) {
                     -webkit-animation: bound_rotate 0.6s cubic-bezier(.33, 1, .68, 1) #{$delay}s forwards alternate;
                     animation: bound_rotate 0.6s cubic-bezier(.33, 1, .68, 1) #{$delay}s forwards alternate;
@@ -87,18 +101,21 @@
 
 
 @-webkit-keyframes bound_rotate {
-     0% {
+    0% {
         opacity: 0;
         transform: translateX(50%) scale(1.2, .8);
     }
+
     40% {
         opacity: 1;
         transform: translateX(-10%) scale(1, .8);
     }
+
     70% {
         opacity: 1;
         transform: translateX(5%) scale(1.2, .8);
     }
+
     to {
         opacity: 1;
         transform: translateX(0%) scale(1, 1);
@@ -106,21 +123,24 @@
 }
 
 @keyframes bound_rotate {
-     0% {
+    0% {
         opacity: 0;
-        transform: translateX(50%) scale(1.2, .8);
+        transform: rotate(0%) scale(1.2, .8);
     }
+
     40% {
         opacity: 1;
-        transform: translateX(-10%) scale(1, .8);
+        transform: rotate(80%) scale(1, .8);
     }
+
     70% {
         opacity: 1;
         transform: translateX(5%) scale(1.2, .8);
     }
+
     to {
         opacity: 1;
-        transform: translateX(0%) scale(1, 1);
+        transform: translateX(100%) scale(1, 1);
     }
 }
 
@@ -129,32 +149,39 @@
         opacity: 0;
         transform: translateY(30%) scale(1.1, .9)
     }
+
     40% {
         opacity: 1;
         transform: translateY(-10%)
     }
+
     70% {
         opacity: 1;
         transform: translateY(5%) scale(1.1, .9)
     }
+
     to {
         opacity: 1;
         transform: none
     }
 }
+
 @keyframes bound-small {
     0% {
         opacity: 0;
         transform: translateY(30%) scale(1.1, .9)
     }
+
     40% {
         opacity: 1;
         transform: translateY(-10%)
     }
+
     70% {
         opacity: 1;
         transform: translateY(5%) scale(1.1, .9)
     }
+
     to {
         opacity: 1;
         transform: none
@@ -165,6 +192,7 @@
     0% {
         transform: scale(1.2)
     }
+
     to {
         transform: scale(1)
     }
@@ -174,6 +202,7 @@
     0% {
         transform: scale(1.2)
     }
+
     to {
         transform: scale(1)
     }
@@ -186,6 +215,7 @@
         opacity: 0;
         transform: translateY(150%)
     }
+
     to {
         opacity: 1;
         transform: none
@@ -197,6 +227,7 @@
         opacity: 0;
         transform: translateY(150%)
     }
+
     to {
         opacity: 1;
         transform: none
@@ -208,6 +239,7 @@
         opacity: 0;
         transform: translateY(40px)
     }
+
     to {
         opacity: 1;
         transform: none
@@ -219,6 +251,7 @@
         opacity: 0;
         transform: translateY(40px)
     }
+
     to {
         opacity: 1;
         transform: none
@@ -229,6 +262,7 @@
     0% {
         transform: scaleX(0)
     }
+
     to {
         transform: scaleX(1)
     }
@@ -238,6 +272,7 @@
     0% {
         transform: scaleX(0)
     }
+
     to {
         transform: scaleX(1)
     }
@@ -247,6 +282,7 @@
     0% {
         transform: scaleY(0)
     }
+
     to {
         transform: scaleY(1)
     }
@@ -256,6 +292,7 @@
     0% {
         transform: scaleY(0)
     }
+
     to {
         transform: scaleY(1)
     }
@@ -265,9 +302,11 @@
     0% {
         transform: translateY(0)
     }
+
     50% {
         transform: translateY(-5px)
     }
+
     to {
         transform: translateY(0)
     }
@@ -277,9 +316,11 @@
     0% {
         transform: translateY(0)
     }
+
     50% {
         transform: translateY(-5px)
     }
+
     to {
         transform: translateY(0)
     }
