@@ -1,7 +1,8 @@
 <?php include 'demo_header.php'; ?>
 
 <body>
-    <section id="menuBtm_05" class="base_header">
+
+    <header id="menuBtm_05" class="base_header">
         <div class="headerSpWap">
             <div class="d_flex j_between bg_333 headerSpFx">
                 <a class="d_block logoHeaderSp" href="">
@@ -51,14 +52,14 @@
                 </ul>
             </nav>
         </div>
-    </section>
+    </header>
     <main class="wapper mainSetumei">
         <ul class="mainSetumeiUl">
             <li class="mainSetumeiLi">ハンバーガーボタンをクリックでメニューを上から表示</li>
             <li class="mainSetumeiLi">×ボタンをクリックでメニューを上に収納</li>
         </ul>
     </main>
-    <foo </footer>
+
 </body>
 
 </html>

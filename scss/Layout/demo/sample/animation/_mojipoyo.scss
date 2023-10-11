@@ -1,9 +1,32 @@
 /* ==========================================================================
 LAYAUT
 ========================================================================== */
+.mojipoyoUl {
+    margin: 5% 0 10% 0;
+}
+
+.mojipoyoLi {
+    margin: 0% 0 2% 0;
+}
+
+.mojipoyoLinks {
+    font-size: 20px;
+    color: #333;
+}
+
 .mojipoyoBox {
     margin: 20% auto;
 }
+
+.mojipoyoBox button {
+    margin: 2% 0 0 0;
+    border: none;
+    background: #333;
+    color: #FFF;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 /* ==========================================================================
 mojipoyo
@@ -13,7 +36,7 @@ mojipoyo
 .mojipoyoH2 {
     display: flex;
     overflow: hidden;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .mojipoyoH2 {
@@ -21,14 +44,16 @@ mojipoyo
     overflow: hidden;
 
     span {
-        opacity: 0;
-        transform: translateY(50%) scale(1.2, .8);
+
         display: block;
     }
 }
 
 .poyoyon {
-    &>span {}
+    &>span {
+        opacity: 0;
+        transform: translateY(50%) scale(1.2, .8);
+    }
 
     &.active {
         &>span {
@@ -88,9 +113,13 @@ mojipoyo
     }
 }
 
+/* ==========================================================================
+mojipoyo02
+========================================================================== */
 .poyoyon02 {
     &>span {
-        transform: translateX(0%) scale(1, 1);
+        opacity: 0;
+        transform: translateX(0%) translateY(0%) scale(1, 1);
     }
 
     &.active {
@@ -110,7 +139,7 @@ mojipoyo
 @-webkit-keyframes bound_rotate {
     0% {
         opacity: 0;
-        transform: rotate(90deg) scale(1.2, .8);
+        transform: rotate(90deg) scale(1.2, .8) translateY(0%);
     }
 
     40% {
@@ -151,9 +180,13 @@ mojipoyo
     }
 }
 
+/* ==========================================================================
+mojipoyo03
+========================================================================== */
 .poyoyon03 {
     span {
-        transform: translateX(0%) scale(1, 1);
+        opacity: 0;
+        transform: translateX(0%) translateY(50%) scale(1, 1);
     }
 
     &.active {
@@ -194,8 +227,14 @@ mojipoyo
     }
 }
 
+/* ==========================================================================
+mojipoyo04
+========================================================================== */
 .poyoyon04 {
-    span {}
+    span {
+        opacity: 0;
+        transform: translateY(50%) scale(1.2, .8);
+    }
 
     &.active {
         span {
@@ -219,7 +258,7 @@ mojipoyo
 
     to {
         opacity: 1;
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
@@ -231,13 +270,17 @@ mojipoyo
 
     to {
         opacity: 1;
-        transform: translateX(100%);
+        transform: translateX(0%);
     }
 }
 
+/* ==========================================================================
+mojipoyo05
+========================================================================== */
 .poyoyon05 {
     &>span {
-        transform: translateX(0%) scale(1, 1);
+        opacity: 0;
+        transform: translateY(50%) translateX(0%) scale(1, 1);
     }
 
     &.active {
@@ -248,6 +291,62 @@ mojipoyo
                 &:nth-child(#{$var}) {
                     -webkit-animation: inview-fadein 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
                     animation: inview-fadein 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes inview-fadein {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+@keyframes inview-fadein {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%) scale(1);
+    }
+}
+
+/* ==========================================================================
+mojipoyo06
+========================================================================== */
+.poyoyon06 {
+    &>span {
+        opacity: 0;
+        transform: translateX(0%) translateY(50%) scale(1.2, .8);
+
+    }
+
+    &.active {
+        span {
+            @for $var from 1 through 12 {
+                $delay: 0.05*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: fadein-content 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                    animation: fadein-content 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
                 }
             }
         }
@@ -274,36 +373,88 @@ mojipoyo
 
     to {
         opacity: 1;
-        transform: none
+        transform: none;
+    }
+}
+
+/* ==========================================================================
+mojipoyo07
+========================================================================== */
+.poyoyon07 {
+    &>span {
+        transform: translateX(0%);
+        opacity: 0;
+        transform: translateY(50%) scale(1.2, .8);
+    }
+
+    &.active {
+        span {
+            @for $var from 1 through 12 {
+                $delay: 0.05*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: speech-bubble-x 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                    animation: speech-bubble-x 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                }
+            }
+        }
     }
 }
 
 @-webkit-keyframes speech-bubble-x {
     0% {
-        transform: scaleX(0)
+        transform: scaleX(0);
     }
 
     to {
-        transform: scaleX(1)
+        opacity: 1;
+        transform: scaleX(1);
     }
 }
 
 @keyframes speech-bubble-x {
     0% {
-        transform: scaleX(0)
+        transform: scaleX(0);
     }
 
     to {
-        transform: scaleX(1)
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
+
+
+/* ==========================================================================
+mojipoyo08
+========================================================================== */
+.poyoyon08 {
+    &>span {
+        opacity: 0;
+        transform: translateX(0%) translateY(50%) scale(1.2, .8);
+    }
+
+    &.active {
+        span {
+            @for $var from 1 through 12 {
+                $delay: 0.05*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: speech-bubble-y 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                    animation: speech-bubble-y 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                }
+            }
+        }
     }
 }
 
 @-webkit-keyframes speech-bubble-y {
     0% {
+
         transform: scaleY(0)
     }
 
     to {
+        opacity: 1;
         transform: scaleY(1)
     }
 }
@@ -314,7 +465,31 @@ mojipoyo
     }
 
     to {
+        opacity: 1;
         transform: scaleY(1)
+    }
+}
+
+/* ==========================================================================
+mojipoyo09
+========================================================================== */
+.poyoyon09 {
+    &>span {
+        opacity: 0;
+        transform: translateX(0%) translateY(50%) scale(1.2, .8);
+    }
+
+    &.active {
+        span {
+            @for $var from 1 through 12 {
+                $delay: 0.05*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: fuyofuyo 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                    animation: fuyofuyo 0.6s cubic-bezier(.51, 1.19, .59, -0.5) #{$delay}s forwards alternate;
+                }
+            }
+        }
     }
 }
 
@@ -324,6 +499,7 @@ mojipoyo
     }
 
     50% {
+        opacity: 1;
         transform: translateY(-5px)
     }
 
@@ -338,11 +514,169 @@ mojipoyo
     }
 
     50% {
+
         transform: translateY(-5px)
     }
 
     to {
+        opacity: 1;
         transform: translateY(0)
+    }
+}
+
+
+/* ==========================================================================
+mojipoyo10
+========================================================================== */
+.poyoyon10 {
+    &>span {
+        opacity: 1;
+        display: inline-block;
+        background: linear-gradient(-90deg, #0072b4 0%, #7bc0be 72%, #afebea 100%);
+        background: -webkit-linear-gradient(-90deg, #0072b4 0%, #7bc0be 72%, #afebea 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &.active {
+        span {
+            @for $var from 1 through 12 {
+                $delay: 0.05*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: change 0.6s linear #{$delay}s forwards alternate;
+                    animation: change 0.6s linear #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes change {
+    50% {
+        background: linear-gradient(-90deg, #7bc0be 0%, #7bc0be 72%, #7bc0be 100%);
+        background: -webkit-linear-gradient(-90deg, #7bc0be 0%, #7bc0be 72%, #7bc0be 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    to {
+        display: inline-block;
+        background: linear-gradient(-90deg, #afebea 0%, #7bc0be 72%, #0072b4 100%);
+        background: -webkit-linear-gradient(-90deg, #afebea 0%, #7bc0be 72%, #0072b4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+@keyframes change {
+
+    50% {
+        background: linear-gradient(-90deg, #7bc0be 0%, #7bc0be 72%, #7bc0be 100%);
+        background: -webkit-linear-gradient(-90deg, #7bc0be 0%, #7bc0be 72%, #7bc0be 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    to {
+        background: linear-gradient(-90deg, #afebea 0%, #7bc0be 72%, #0072b4 100%);
+        background: -webkit-linear-gradient(-90deg, #afebea 0%, #7bc0be 72%, #0072b4 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/* ==========================================================================
+mojipoyo11
+========================================================================== */
+.poyoyon11 {
+    .mojipoyoH2_011_span {
+        opacity: 1;
+        display: inline-block;
+        background-position: 0% 100%;
+        background-size: 0% 2px;
+        background-repeat: no-repeat;
+        transition-duration: 0.2s;
+        background-size: 0% 10%;
+        background-image: linear-gradient(transparent);
+    }
+
+
+    &.active .mojipoyoH2_011_span {
+        -webkit-animation: changeGrade 0.6s linear 0.25s forwards alternate;
+        animation: changeGrade 0.6s linear 0.25s forwards alternate;
+    }
+}
+
+@-webkit-keyframes changeGrade {
+
+    to {
+        background-size: 100% 10%;
+        background-image: linear-gradient(90deg, #a015ff 0%, #2a79ff 9.74%, #3fadff 22.25%, #7df1ff 35.05%, #3fffa7 47.58%, #80ff7f 57.5%, #a1ff2a 68.85%, #c6da00 80.55%, #ffa92a 89.82%, #ff0055 100%);
+    }
+}
+
+@keyframes changeGrade {
+    to {
+        background-size: 100% 10%;
+        background-image: linear-gradient(90deg, #a015ff 0%, #2a79ff 9.74%, #3fadff 22.25%, #7df1ff 35.05%, #3fffa7 47.58%, #80ff7f 57.5%, #a1ff2a 68.85%, #c6da00 80.55%, #ffa92a 89.82%, #ff0055 100%);
+    }
+}
+
+/* ==========================================================================
+mojipoyo12
+========================================================================== */
+.poyoyon12 {
+    &>span {
+        opacity: 0;
+        transform: translateX(0%) translateY(0%) scale(0, 0);
+    }
+
+    &.active {
+        span {
+            @for $var from 1 through 12 {
+                $delay: 0.05*$var;
+
+                &:nth-child(#{$var}) {
+                    -webkit-animation: punk 0.6s ease-in-out #{$delay}s forwards alternate;
+                    animation: punk 0.6s ease-in-out #{$delay}s forwards alternate;
+                }
+            }
+        }
+    }
+}
+
+@-webkit-keyframes punk {
+    0% {
+
+        transform: scale(0, 0)
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2, 1.2)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1)
+    }
+}
+
+@keyframes punk {
+    0% {
+
+        transform: scale(0, 0)
+    }
+
+    50% {
+        opacity: 1;
+        transform: scale(1.2, 1.2)
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1, 1)
     }
 }
 
@@ -370,8 +704,6 @@ mojipoyo
         }
 
     }
-
-
 }
 
 .prefcover {

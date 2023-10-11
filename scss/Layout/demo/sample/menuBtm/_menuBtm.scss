@@ -3,7 +3,11 @@
 @forward '_menuBtm_03';
 @forward '_menuBtm_04';
 @forward '_menuBtm_05';
+@forward '_menuBtm_06';
 
+body {
+    overflow-x: hidden;
+}
 
 .bg_4ae {
     background: #4ae;

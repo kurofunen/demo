@@ -1,4 +1,4 @@
-$(function(){
+$(function () {
     console.log("-")
     /* ==========================================================================
     スムーズスクロール
@@ -23,14 +23,14 @@ $(function(){
             scrollTop: position
         }, 500);
     });
-    
+
     /* ==========================================================================
     SPメニューの開け閉め
     ========================================================================== */
     $(".jsBtmHeaderSp").on("click", function () {
         if ($(this).hasClass('off')) {
             $('.jsNavHeaderSp').removeClass('off').addClass('on');
-             $('.bgNvHeaderSp').fadeIn(500);
+            $('.bgNvHeaderSp').fadeIn(500);
             $(this).removeClass('off').addClass('on');
         } else {
             $('.jsNavHeaderSp').removeClass('on').addClass('off');
@@ -38,11 +38,11 @@ $(function(){
             $(this).removeClass('on').addClass('off');
         }
     });
-    
-    $('.bgNvHeaderSp').on("click" , function(){
+
+    $('.bgNvHeaderSp').on("click", function () {
         if ($(this).hasClass('off')) {
             $('.jsBtmHeaderSp').removeClass('off').addClass('on');
-             $('.jsNavHeaderSp').removeClass('off').addClass('on');
+            $('.jsNavHeaderSp').removeClass('off').addClass('on');
             $(this).fadeIn();
         } else {
             $('.jsBtmHeaderSp').removeClass('on').addClass('off');
@@ -62,27 +62,26 @@ $(function(){
         }
     });
 
-    
 });
 /* ==========================================================================
-スクロールした時ヘッダを変更する
+スクロールしてヘッダを過ぎたら変更する
 ========================================================================== */
-
-$(window).scroll(function() {
+$(window).scroll(function () {
     let scrollPosition = $(this).scrollTop();
     let headerOffset = $(".base_header").outerHeight();
+    let navOffset = window.offsetTop - headerOffset;
     if (scrollPosition >= headerOffset) {
         $(".base_header").addClass('on');
-        $(".h1Title").animate({fontSize: 30}, 0, 'linear', sampleEvent).addClass('on');
+        $(".h1Title").addClass('on');
         $(".headerSpFx").addClass('on');
-        $(".brdHeaderSp ").css("background","#333");
+        $(".brdHeaderSp ").css("background", "#333");
+        $('.navHeaderSp').css("top", navOffset);
     } else {
         $(".base_header").removeClass('on');
-        $(".h1Title").animate({fontSize: 20}, 0, 'linear',sampleEvent).removeClass('on');
+        $(".h1Title").removeClass('on');
         $(".headerSpFx").removeClass('on');
-        $(".brdHeaderSp ").css("background","#FFF");
+        $(".brdHeaderSp ").css("background", "#ccc");
+        $('.navHeaderSp').css("top", navOffset);
     }
-   function sampleEvent() {
-        console.log('何か実行する！');
-    }
+
 });

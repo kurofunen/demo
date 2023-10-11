@@ -3837,6 +3837,9 @@ Function
 LAYOUT
 ========================================================================== */
 #menuBtm_04 {
+  position: sticky;
+  top: 0;
+  left: 0;
   /* ==========================================================================
   ヘッダーメニューの設定
   ========================================================================== */
@@ -3851,7 +3854,7 @@ LAYOUT
   height: 200vh;
 }
 #menuBtm_04 .headerSpFx.on {
-  background: unset;
+  background: #53ac3f;
 }
 #menuBtm_04.base_header {
   position: sticky;
@@ -3890,11 +3893,12 @@ LAYOUT
 }
 #menuBtm_04 .h1Title {
   transition-duration: 0.5s;
+  font-size: 20px;
 }
 #menuBtm_04 .h1Title.on {
-  position: absolute;
   top: 10%;
   color: #333;
+  font-size: 60px;
 }
 #menuBtm_04 .ulheaderNavTop {
   display: flex;
@@ -3915,6 +3919,9 @@ LAYOUT
   text-decoration: none;
   font-size: 16px;
   display: block;
+}
+#menuBtm_04 #menuBtm_04.on .linkheaderNav {
+  color: #333;
 }
 #menuBtm_04 .btmHeaderSp {
   width: -moz-fit-content;
@@ -3974,24 +3981,14 @@ LAYOUT
   height: 100vh;
   margin: 0 0 0 auto;
   padding: 32px 0 30px 0;
-  position: fixed;
-  right: 0;
+  position: absolute;
   z-index: 999;
-  top: 42px;
-  right: -305px;
   transition-duration: 0.25s;
   background: #F6F4EE;
-}
-@media screen and (max-width: 767px) {
-  #menuBtm_04 .navHeaderSp {
-    top: 42px;
-  }
+  right: -100%;
 }
 #menuBtm_04 .navHeaderSp.on {
   right: 0;
-}
-#menuBtm_04 .navHeaderSp.off {
-  right: -305px;
 }
 #menuBtm_04 .ulNavHeaderSp {
   width: 245px;
@@ -4209,6 +4206,12 @@ LAYOUT
 #menuBtm_05 .liNavHeaderSp01 {
   border-top: 1px solid #0B090E;
 }
+#menuBtm_05 .linkheaderNav {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
 #menuBtm_05 .btmNavHeaderSp {
   padding: 11% 4.5% 10% 5%;
   text-decoration: none;
@@ -4295,6 +4298,283 @@ LAYOUT
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+.base_header {
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  width: 100%;
+  background: unset;
+  transition-duration: 0.5s;
+}
+
+.base_header.scrollTo {
+  background: rgba(59, 96, 82, 0.85);
+}
+
+.headerPc {
+  position: relative;
+  height: 5.2vw;
+}
+
+.logoHeaderPc {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 6.25vw;
+  transition-duration: 0.5s;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+.logoHeaderPc img {
+  width: 100%;
+  height: auto;
+}
+
+.logoHeaderPc.active {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.logoHeaderPc.scrollTo {
+  width: 5.2vw;
+}
+
+.navHeaderPc {
+  position: relative;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media screen and (max-width: 1260px) {
+  .navHeaderPc {
+    padding-top: 0%;
+    padding-bottom: 0%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .navHeaderPc {
+    margin: 0 0 0 auto;
+  }
+}
+
+.ulNavHeaderPc {
+  position: relative;
+}
+@media screen and (max-width: 1300px) {
+  .ulNavHeaderPc {
+    width: 1150px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1300px) and (max-width: 1260px) {
+  .ulNavHeaderPc {
+    width: 88.46%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .ulNavHeaderPc {
+    width: 1150px;
+  }
+}
+@media screen and (max-width: 1260px) and (max-width: 1260px) {
+  .ulNavHeaderPc {
+    width: 95.83%;
+  }
+}
+
+.liNavHeaderPc {
+  margin: 0vw 1.5625vw 0vw 0vw;
+  width: auto;
+  padding: 2.2vw 0 6vw 0;
+}
+@media screen and (max-width: 1260px) {
+  .liNavHeaderPc {
+    margin: 0 1vw;
+  }
+}
+.liNavHeaderPc:last-child {
+  margin: 0;
+}
+
+.arrowNavHeaderPc {
+  width: 100%;
+  padding: 0 24px 0 0;
+  background: url(../img/arrowNavHeaderPc.svg) no-repeat center right;
+  background-size: auto 100%;
+}
+
+.btnNavHeaderPc {
+  font-size: 14px;
+  line-height: 1.4285714286;
+  letter-spacing: 0em;
+  text-indent: 0em;
+}
+@media screen and (max-width: 1260px) {
+  .btnNavHeaderPc {
+    font-size: 1.1111111111vw;
+  }
+}
+.btnNavHeaderPc::before {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 1.4285714286) * 0.5em);
+  content: "";
+}
+.btnNavHeaderPc::after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: calc((1 - 1.4285714286) * 0.5em);
+  content: "";
+}
+@media screen and (max-width: 1300px) {
+  .btnNavHeaderPc {
+    font-size: 1.0769230769vw;
+  }
+}
+
+/* ==========================================================================
+サブナビ
+========================================================================== */
+.subNavHeaderPc {
+  position: absolute;
+  top: 6.3vw;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  padding-top: 25px;
+  padding-bottom: 24px;
+  padding-left: 25px;
+  padding-right: 25px;
+  display: none;
+}
+@media screen and (max-width: 1260px) {
+  .subNavHeaderPc {
+    padding: 2.08% 2.08% 2% 2.08%;
+  }
+}
+
+.scrollTo .subNavHeaderPc {
+  top: 5.19vw;
+}
+
+.ulSubNavHeaderPc {
+  width: 1150px;
+  margin: auto;
+  justify-content: flex-start;
+}
+@media screen and (max-width: 1260px) {
+  .ulSubNavHeaderPc {
+    width: 95.83%;
+  }
+}
+
+.liSubNavHeaderPc {
+  width: 175px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 20px;
+}
+@media screen and (max-width: 1260px) {
+  .liSubNavHeaderPc {
+    width: 15.21%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .liSubNavHeaderPc {
+    margin: 0% 1.73% 0% 0%;
+  }
+}
+.liSubNavHeaderPc:last-child {
+  margin: 0;
+}
+
+.h3SubNavHeaderPc {
+  margin-top: 8px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  font-size: 13px;
+  line-height: 1.4615384615;
+  letter-spacing: 0em;
+  text-indent: 0em;
+}
+@media screen and (max-width: 1260px) {
+  .h3SubNavHeaderPc {
+    margin: 4.57% 0% 0% 0%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .h3SubNavHeaderPc {
+    font-size: 1.0317460317vw;
+  }
+}
+.h3SubNavHeaderPc::before {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 1.4615384615) * 0.5em);
+  content: "";
+}
+.h3SubNavHeaderPc::after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: calc((1 - 1.4615384615) * 0.5em);
+  content: "";
+}
+
+.newTabSubNavHeaderPc {
+  background: url(../img/newTabSubNavHeaderPc.svg) no-repeat right center;
+  background-size: auto 85%;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 21px;
+}
+@media screen and (max-width: 1260px) {
+  .newTabSubNavHeaderPc {
+    padding: 0% 1.75% 0% 0%;
+  }
+}
+@media screen and (max-width: 1260px) {
+  .newTabSubNavHeaderPc {
+    padding: 0% 14.91% 0% 0%;
+  }
+}
+
+.mainFv {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btmLink {
+  display: block;
+  margin: auto;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 .bg_4ae {
@@ -4599,8 +4879,30 @@ demo(アニメーション)
 /* ==========================================================================
 LAYAUT
 ========================================================================== */
+.mojipoyoUl {
+  margin: 5% 0 10% 0;
+}
+
+.mojipoyoLi {
+  margin: 0% 0 2% 0;
+}
+
+.mojipoyoLinks {
+  font-size: 20px;
+  color: #333;
+}
+
 .mojipoyoBox {
   margin: 20% auto;
+}
+
+.mojipoyoBox button {
+  margin: 2% 0 0 0;
+  border: none;
+  background: #333;
+  color: #FFF;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 /* ==========================================================================
@@ -4609,7 +4911,7 @@ mojipoyo
 .mojipoyoH2 {
   display: flex;
   overflow: hidden;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .mojipoyoH2 {
@@ -4617,11 +4919,13 @@ mojipoyo
   overflow: hidden;
 }
 .mojipoyoH2 span {
-  opacity: 0;
-  transform: translateY(50%) scale(1.2, 0.8);
   display: block;
 }
 
+.poyoyon > span {
+  opacity: 0;
+  transform: translateY(50%) scale(1.2, 0.8);
+}
 .poyoyon.active > span:nth-child(1) {
   animation: bound 0.6s cubic-bezier(0.33, 1, 0.68, 1) 0.05s forwards alternate;
 }
@@ -4676,8 +4980,12 @@ mojipoyo
     transform: none;
   }
 }
+/* ==========================================================================
+mojipoyo02
+========================================================================== */
 .poyoyon02 > span {
-  transform: translateX(0%) scale(1, 1);
+  opacity: 0;
+  transform: translateX(0%) translateY(0%) scale(1, 1);
 }
 .poyoyon02.active span:nth-child(1) {
   animation: bound_rotate 0.6s 0.05s forwards alternate;
@@ -4733,8 +5041,12 @@ mojipoyo
     transform: translateX(0deg) scale(1, 1);
   }
 }
+/* ==========================================================================
+mojipoyo03
+========================================================================== */
 .poyoyon03 span {
-  transform: translateX(0%) scale(1, 1);
+  opacity: 0;
+  transform: translateX(0%) translateY(50%) scale(1, 1);
 }
 .poyoyon03.active span:nth-child(1) {
   animation: scale-down 0.6s 0.05s forwards ease-in-out;
@@ -4782,6 +5094,13 @@ mojipoyo
     transform: scale(1);
   }
 }
+/* ==========================================================================
+mojipoyo04
+========================================================================== */
+.poyoyon04 span {
+  opacity: 0;
+  transform: translateY(50%) scale(1.2, 0.8);
+}
 .poyoyon04.active span:nth-child(1) {
   animation: inview-fadein 0.6s 0.05s forwards ease-in-out;
 }
@@ -4825,11 +5144,15 @@ mojipoyo
   }
   to {
     opacity: 1;
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
+/* ==========================================================================
+mojipoyo05
+========================================================================== */
 .poyoyon05 > span {
-  transform: translateX(0%) scale(1, 1);
+  opacity: 0;
+  transform: translateY(50%) translateX(0%) scale(1, 1);
 }
 .poyoyon05.active span:nth-child(1) {
   animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.05s forwards alternate;
@@ -4867,6 +5190,62 @@ mojipoyo
 .poyoyon05.active span:nth-child(12) {
   animation: inview-fadein 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.6s forwards alternate;
 }
+@keyframes inview-fadein {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0%) scale(1);
+  }
+}
+/* ==========================================================================
+mojipoyo06
+========================================================================== */
+.poyoyon06 > span {
+  opacity: 0;
+  transform: translateX(0%) translateY(50%) scale(1.2, 0.8);
+}
+.poyoyon06.active span:nth-child(1) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.05s forwards alternate;
+}
+.poyoyon06.active span:nth-child(2) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.1s forwards alternate;
+}
+.poyoyon06.active span:nth-child(3) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.15s forwards alternate;
+}
+.poyoyon06.active span:nth-child(4) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.2s forwards alternate;
+}
+.poyoyon06.active span:nth-child(5) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.25s forwards alternate;
+}
+.poyoyon06.active span:nth-child(6) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.3s forwards alternate;
+}
+.poyoyon06.active span:nth-child(7) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.35s forwards alternate;
+}
+.poyoyon06.active span:nth-child(8) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.4s forwards alternate;
+}
+.poyoyon06.active span:nth-child(9) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.45s forwards alternate;
+}
+.poyoyon06.active span:nth-child(10) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.5s forwards alternate;
+}
+.poyoyon06.active span:nth-child(11) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.55s forwards alternate;
+}
+.poyoyon06.active span:nth-child(12) {
+  animation: fadein-content 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.6s forwards alternate;
+}
 
 @keyframes fadein-content {
   0% {
@@ -4878,21 +5257,153 @@ mojipoyo
     transform: none;
   }
 }
+/* ==========================================================================
+mojipoyo07
+========================================================================== */
+.poyoyon07 > span {
+  transform: translateX(0%);
+  opacity: 0;
+  transform: translateY(50%) scale(1.2, 0.8);
+}
+.poyoyon07.active span:nth-child(1) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.05s forwards alternate;
+}
+.poyoyon07.active span:nth-child(2) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.1s forwards alternate;
+}
+.poyoyon07.active span:nth-child(3) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.15s forwards alternate;
+}
+.poyoyon07.active span:nth-child(4) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.2s forwards alternate;
+}
+.poyoyon07.active span:nth-child(5) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.25s forwards alternate;
+}
+.poyoyon07.active span:nth-child(6) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.3s forwards alternate;
+}
+.poyoyon07.active span:nth-child(7) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.35s forwards alternate;
+}
+.poyoyon07.active span:nth-child(8) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.4s forwards alternate;
+}
+.poyoyon07.active span:nth-child(9) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.45s forwards alternate;
+}
+.poyoyon07.active span:nth-child(10) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.5s forwards alternate;
+}
+.poyoyon07.active span:nth-child(11) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.55s forwards alternate;
+}
+.poyoyon07.active span:nth-child(12) {
+  animation: speech-bubble-x 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.6s forwards alternate;
+}
 @keyframes speech-bubble-x {
   0% {
     transform: scaleX(0);
   }
   to {
+    opacity: 1;
     transform: scaleX(1);
   }
+}
+/* ==========================================================================
+mojipoyo08
+========================================================================== */
+.poyoyon08 > span {
+  opacity: 0;
+  transform: translateX(0%) translateY(50%) scale(1.2, 0.8);
+}
+.poyoyon08.active span:nth-child(1) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.05s forwards alternate;
+}
+.poyoyon08.active span:nth-child(2) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.1s forwards alternate;
+}
+.poyoyon08.active span:nth-child(3) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.15s forwards alternate;
+}
+.poyoyon08.active span:nth-child(4) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.2s forwards alternate;
+}
+.poyoyon08.active span:nth-child(5) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.25s forwards alternate;
+}
+.poyoyon08.active span:nth-child(6) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.3s forwards alternate;
+}
+.poyoyon08.active span:nth-child(7) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.35s forwards alternate;
+}
+.poyoyon08.active span:nth-child(8) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.4s forwards alternate;
+}
+.poyoyon08.active span:nth-child(9) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.45s forwards alternate;
+}
+.poyoyon08.active span:nth-child(10) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.5s forwards alternate;
+}
+.poyoyon08.active span:nth-child(11) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.55s forwards alternate;
+}
+.poyoyon08.active span:nth-child(12) {
+  animation: speech-bubble-y 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.6s forwards alternate;
 }
 @keyframes speech-bubble-y {
   0% {
     transform: scaleY(0);
   }
   to {
+    opacity: 1;
     transform: scaleY(1);
   }
+}
+/* ==========================================================================
+mojipoyo09
+========================================================================== */
+.poyoyon09 > span {
+  opacity: 0;
+  transform: translateX(0%) translateY(50%) scale(1.2, 0.8);
+}
+.poyoyon09.active span:nth-child(1) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.05s forwards alternate;
+}
+.poyoyon09.active span:nth-child(2) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.1s forwards alternate;
+}
+.poyoyon09.active span:nth-child(3) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.15s forwards alternate;
+}
+.poyoyon09.active span:nth-child(4) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.2s forwards alternate;
+}
+.poyoyon09.active span:nth-child(5) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.25s forwards alternate;
+}
+.poyoyon09.active span:nth-child(6) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.3s forwards alternate;
+}
+.poyoyon09.active span:nth-child(7) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.35s forwards alternate;
+}
+.poyoyon09.active span:nth-child(8) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.4s forwards alternate;
+}
+.poyoyon09.active span:nth-child(9) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.45s forwards alternate;
+}
+.poyoyon09.active span:nth-child(10) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.5s forwards alternate;
+}
+.poyoyon09.active span:nth-child(11) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.55s forwards alternate;
+}
+.poyoyon09.active span:nth-child(12) {
+  animation: fuyofuyo 0.6s cubic-bezier(0.51, 1.19, 0.59, -0.5) 0.6s forwards alternate;
 }
 @keyframes fuyofuyo {
   0% {
@@ -4902,7 +5413,147 @@ mojipoyo
     transform: translateY(-5px);
   }
   to {
+    opacity: 1;
     transform: translateY(0);
+  }
+}
+/* ==========================================================================
+mojipoyo10
+========================================================================== */
+.poyoyon10 > span {
+  opacity: 1;
+  display: inline-block;
+  background: linear-gradient(-90deg, #0072b4 0%, #7bc0be 72%, #afebea 100%);
+  background: -webkit-linear-gradient(-90deg, #0072b4 0%, #7bc0be 72%, #afebea 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.poyoyon10.active span:nth-child(1) {
+  animation: change 0.6s linear 0.05s forwards alternate;
+}
+.poyoyon10.active span:nth-child(2) {
+  animation: change 0.6s linear 0.1s forwards alternate;
+}
+.poyoyon10.active span:nth-child(3) {
+  animation: change 0.6s linear 0.15s forwards alternate;
+}
+.poyoyon10.active span:nth-child(4) {
+  animation: change 0.6s linear 0.2s forwards alternate;
+}
+.poyoyon10.active span:nth-child(5) {
+  animation: change 0.6s linear 0.25s forwards alternate;
+}
+.poyoyon10.active span:nth-child(6) {
+  animation: change 0.6s linear 0.3s forwards alternate;
+}
+.poyoyon10.active span:nth-child(7) {
+  animation: change 0.6s linear 0.35s forwards alternate;
+}
+.poyoyon10.active span:nth-child(8) {
+  animation: change 0.6s linear 0.4s forwards alternate;
+}
+.poyoyon10.active span:nth-child(9) {
+  animation: change 0.6s linear 0.45s forwards alternate;
+}
+.poyoyon10.active span:nth-child(10) {
+  animation: change 0.6s linear 0.5s forwards alternate;
+}
+.poyoyon10.active span:nth-child(11) {
+  animation: change 0.6s linear 0.55s forwards alternate;
+}
+.poyoyon10.active span:nth-child(12) {
+  animation: change 0.6s linear 0.6s forwards alternate;
+}
+@keyframes change {
+  50% {
+    background: linear-gradient(-90deg, #7bc0be 0%, #7bc0be 72%, #7bc0be 100%);
+    background: -webkit-linear-gradient(-90deg, #7bc0be 0%, #7bc0be 72%, #7bc0be 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  to {
+    background: linear-gradient(-90deg, #afebea 0%, #7bc0be 72%, #0072b4 100%);
+    background: -webkit-linear-gradient(-90deg, #afebea 0%, #7bc0be 72%, #0072b4 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+/* ==========================================================================
+mojipoyo11
+========================================================================== */
+.poyoyon11 .mojipoyoH2_011_span {
+  opacity: 1;
+  display: inline-block;
+  background-position: 0% 100%;
+  background-size: 0% 2px;
+  background-repeat: no-repeat;
+  transition-duration: 0.2s;
+  background-size: 0% 10%;
+  background-image: linear-gradient(transparent);
+}
+.poyoyon11.active .mojipoyoH2_011_span {
+  animation: changeGrade 0.6s linear 0.25s forwards alternate;
+}
+@keyframes changeGrade {
+  to {
+    background-size: 100% 10%;
+    background-image: linear-gradient(90deg, #a015ff 0%, #2a79ff 9.74%, #3fadff 22.25%, #7df1ff 35.05%, #3fffa7 47.58%, #80ff7f 57.5%, #a1ff2a 68.85%, #c6da00 80.55%, #ffa92a 89.82%, #ff0055 100%);
+  }
+}
+/* ==========================================================================
+mojipoyo12
+========================================================================== */
+.poyoyon12 > span {
+  opacity: 0;
+  transform: translateX(0%) translateY(0%) scale(0, 0);
+}
+.poyoyon12.active span:nth-child(1) {
+  animation: punk 0.6s ease-in-out 0.05s forwards alternate;
+}
+.poyoyon12.active span:nth-child(2) {
+  animation: punk 0.6s ease-in-out 0.1s forwards alternate;
+}
+.poyoyon12.active span:nth-child(3) {
+  animation: punk 0.6s ease-in-out 0.15s forwards alternate;
+}
+.poyoyon12.active span:nth-child(4) {
+  animation: punk 0.6s ease-in-out 0.2s forwards alternate;
+}
+.poyoyon12.active span:nth-child(5) {
+  animation: punk 0.6s ease-in-out 0.25s forwards alternate;
+}
+.poyoyon12.active span:nth-child(6) {
+  animation: punk 0.6s ease-in-out 0.3s forwards alternate;
+}
+.poyoyon12.active span:nth-child(7) {
+  animation: punk 0.6s ease-in-out 0.35s forwards alternate;
+}
+.poyoyon12.active span:nth-child(8) {
+  animation: punk 0.6s ease-in-out 0.4s forwards alternate;
+}
+.poyoyon12.active span:nth-child(9) {
+  animation: punk 0.6s ease-in-out 0.45s forwards alternate;
+}
+.poyoyon12.active span:nth-child(10) {
+  animation: punk 0.6s ease-in-out 0.5s forwards alternate;
+}
+.poyoyon12.active span:nth-child(11) {
+  animation: punk 0.6s ease-in-out 0.55s forwards alternate;
+}
+.poyoyon12.active span:nth-child(12) {
+  animation: punk 0.6s ease-in-out 0.6s forwards alternate;
+}
+@keyframes punk {
+  0% {
+    transform: scale(0, 0);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1, 1);
   }
 }
 /* ==========================================================================
@@ -4987,10 +5638,16 @@ use＆nameSpace
 /* ==========================================================================
 LAYOUT
 ========================================================================== */
+body {
+  scroll-behavior: smooth;
+}
+
 .bgIndexPrice {
   background: url(../img/scroll/bgIndexPricePc.jpg) no-repeat top center;
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 @media screen and (max-width: 767px) {
   .bgIndexPrice {
@@ -5009,7 +5666,7 @@ LAYOUT
 }
 
 .indexPrice {
-  margin: 22.6% 0% 0% 0%;
+  margin: 6.6% 0% 0% 0%;
   padding: 22.5% 0% 21.5% 0%;
 }
 @media screen and (max-width: 767px) {
@@ -5025,6 +5682,7 @@ LAYOUT
 
 .secPriceTitle {
   position: relative;
+  overflow: hidden;
 }
 
 .leftBrdIndexPrice {
@@ -5080,4 +5738,94 @@ LAYOUT
   .txtIndexPriceLxn {
     font-size: 1.2em;
   }
+}
+
+.skaterFig {
+  width: 50vw;
+  height: 40vw;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  transition-duration: 1s;
+}
+
+.officeArea {
+  position: relative;
+  overflow: hidden;
+}
+
+.officeAreaWap {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin: 20% auto 0 auto;
+}
+
+.officeAreaFig {
+  width: 50%;
+  left: 0%;
+  bottom: 0;
+  position: absolute;
+  transition-duration: 0.5s;
+  z-index: 1;
+}
+
+.officeAreaTxt {
+  width: 50%;
+  margin: 0% 0 0 auto;
+  padding: 10% 0;
+}
+
+.officeAreaTxtInner {
+  position: relative;
+  padding: 0 0 5% 0;
+}
+
+.h2title {
+  font-size: 26px;
+}
+
+.h3title {
+  font-size: 20px;
+}
+
+.brdtitle {
+  position: absolute;
+  width: 1000px;
+  height: 1px;
+  background: #333;
+  right: 0;
+  bottom: 0;
+}
+
+.txtofficeAreaTxt {
+  margin: 10% 0 0 0;
+}
+
+.reason {
+  background: #cacaca;
+  overflow: hidden;
+  position: relative;
+  padding: 10% 0;
+  margin: 0 0 50% 0;
+}
+
+.reasonFx {
+  margin: 5% auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.reasonItem {
+  width: 30%;
+}
+
+.reasonItem01 {
+  position: absolute;
+  left: 0%;
+  bottom: 0;
 }/*# sourceMappingURL=common.css.map */

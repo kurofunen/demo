@@ -1,7 +1,8 @@
 <?php include 'demo_header.php'; ?>
 
 <body>
-    <section id="menuBtm_04" class="base_header">
+
+    <header id="menuBtm_04" class="base_header">
         <div class="headerSpWap">
             <div class="d_flex j_between bg_333 headerSpFx">
                 <a class="d_block j_between ali_center j_around logoHeaderSp" href="">
@@ -78,10 +79,11 @@
                 </ul>
             </nav>
         </div>
-    </section>
-    <main class="wapper mainSetumei mainSetumei02">
+    </header>
+    <main class="mainSetumei mainSetumei02">
         <ul class="mainSetumeiUl">
             <li class="mainSetumeiLi">スクロールしたらヘッダーを変える</li>
         </ul>
     </main>
+
 </body>

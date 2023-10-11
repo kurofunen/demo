@@ -6,11 +6,16 @@ use＆nameSpace
 /* ==========================================================================
 LAYOUT
 ========================================================================== */
+body {
+    scroll-behavior: smooth;
+}
 
 .bgIndexPrice {
     background: url(../img/scroll/bgIndexPricePc.jpg) no-repeat top center;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
 
     @include mi.mq(sp) {
         background: unset;
@@ -28,7 +33,7 @@ LAYOUT
 }
 
 .indexPrice {
-    margin: 22.6% 0% 0% 0%;
+    margin: 6.6% 0% 0% 0%;
     padding: 22.5% 0% 21.5% 0%;
 
     @include mi.mq(sp) {
@@ -45,6 +50,7 @@ LAYOUT
 
 .secPriceTitle {
     position: relative;
+    overflow: hidden;
 }
 
 .leftBrdIndexPrice {
@@ -96,4 +102,104 @@ LAYOUT
     @include mi.mq(sp) {
         font-size: 1.2em;
     }
+}
+
+//ボード
+.skaterFig {
+    width: 50vw;
+    height: 40vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    transition-duration: 1s;
+
+}
+
+//オフィス
+.officeArea {
+    position: relative;
+    overflow: hidden;
+}
+
+.officeAreaWap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 20% auto 0 auto;
+}
+
+.officeAreaFig {
+    width: 50%;
+    left: 0%;
+    bottom: 0;
+    position: absolute;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+
+.officeAreaTxt {
+    width: 50%;
+    margin: 0% 0 0 auto;
+    padding: 10% 0;
+
+}
+
+
+.officeAreaTxtInner {
+    position: relative;
+    padding: 0 0 5% 0;
+}
+
+.h2title {
+    font-size: 26px;
+}
+
+.h3title {
+    font-size: 20px;
+}
+
+.brdtitle {
+    position: absolute;
+    width: 1000px;
+    height: 1px;
+    background: #333;
+    right: 0;
+    bottom: 0;
+}
+
+.txtofficeAreaTxt {
+    margin: 10% 0 0 0;
+}
+
+//選ばれる理由
+.reason {
+    background: #cacaca;
+    overflow: hidden;
+    position: relative;
+    padding: 10% 0;
+    margin: 0 0 50% 0;
+}
+
+.reasonWap {}
+
+.reasonTxtInner {}
+
+.reasonFx {
+    margin: 5% auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.reasonItem {
+    width: 30%;
+}
+
+.reasonItem01 {
+    position: absolute;
+    left: 0%;
+    bottom: 0;
 }

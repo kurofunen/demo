@@ -1,6 +1,8 @@
 <?php include 'demo_header.php'; ?>
+
 <body>
-<section id="menuBtm_01" class="base_header">
+
+
     <div class="headerSpWap">
         <div class="d_flex j_between bg_4ae headerSpFx">
             <a class="d_block logoHeaderSp" href="">
@@ -12,7 +14,7 @@
                     <span class="brdHeaderSp brdHeaderSp02"></span>
                     <span class="brdHeaderSp brdHeaderSp03"></span>
                 </div>
-                
+
             </div>
         </div>
         <nav class="bg_F6F4EE navHeaderSp jsNavHeaderSp off">
@@ -50,12 +52,12 @@
             </ul>
         </nav>
     </div>
-</section>
+    </header>
     <main class="wapper mainSetumei">
         <ul class="mainSetumeiUl">
             <li class="mainSetumeiLi">ハンバーガーボタンをクリックでメニューを横から表示</li>
             <li class="mainSetumeiLi">×ボタンをクリックでメニューを横に非表示</li>
         </ul>
     </main>
-</body>
 
+</body>
