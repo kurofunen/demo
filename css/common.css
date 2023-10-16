@@ -3397,6 +3397,7 @@ LAYOUT
 #menuBtm_02 .h3BtmHeaderSp {
   margin: 7px 0 0 0;
   line-height: 1;
+  color: #FFF;
 }
 #menuBtm_02 .h3BtmHeaderSp::before {
   display: block;
@@ -4573,6 +4574,249 @@ LAYOUT
   margin: auto;
 }
 
+/* ==========================================================================
+use＆nameSpace
+========================================================================== */
+/* ==========================================================================
+Function
+========================================================================== */
+/* ==========================================================================
+LAYOUT
+========================================================================== */
+#menuBtm_07 {
+  /* ==========================================================================
+  メニューボタンの設定
+  ========================================================================== */
+  /* ==========================================================================
+  ナビメニューの設定
+  ========================================================================== */
+}
+#menuBtm_07 .mainFv {
+  height: 200vh;
+}
+#menuBtm_07.base_header {
+  position: sticky;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+#menuBtm_07 .headerSpWap {
+  position: relative;
+}
+#menuBtm_07 .headerSpFx {
+  padding: 10px 10px;
+  width: 100%;
+  align-items: center;
+}
+#menuBtm_07 .logoHeaderSp {
+  display: block;
+  text-decoration: none;
+  color: #FFF;
+}
+@media screen and (max-width: 1261px) {
+  #menuBtm_07 .logoHeaderSp {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  #menuBtm_07 .logoHeaderSp {
+    font-size: 1.5873015873vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  #menuBtm_07 .logoHeaderSp {
+    font-size: 5.3333333333vw;
+  }
+}
+#menuBtm_07 .btmHeaderSp {
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+#menuBtm_07 .btmHeaderSpWap {
+  width: 33px;
+  margin: auto;
+  height: 22px;
+  position: relative;
+}
+#menuBtm_07 .brdHeaderSp {
+  width: 100%;
+  height: 2px;
+  background: #FFF;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+#menuBtm_07 .btmHeaderSp .brdHeaderSp01 {
+  top: 0px;
+}
+#menuBtm_07 .btmHeaderSp .brdHeaderSp02 {
+  top: 11px;
+}
+#menuBtm_07 .btmHeaderSp .brdHeaderSp03 {
+  top: 21px;
+}
+#menuBtm_07 .btmHeaderSp.on .brdHeaderSp01 {
+  top: 11px;
+  transform: rotate(-45deg);
+}
+#menuBtm_07 .btmHeaderSp.on .brdHeaderSp02 {
+  opacity: 0;
+}
+#menuBtm_07 .btmHeaderSp.on .brdHeaderSp03 {
+  top: 11px;
+  transform: rotate(45deg);
+}
+#menuBtm_07 .navHeaderSp {
+  width: 305px;
+  height: 100vh;
+  margin: 0 0 0 auto;
+  padding: 32px 0 30px 0;
+  position: absolute;
+  right: 0;
+  z-index: 999;
+  top: 42px;
+  background: #F6F4EE;
+  display: none;
+}
+#menuBtm_07 .ulNavHeaderSp {
+  width: 245px;
+  margin: auto;
+}
+#menuBtm_07 .liNavHeaderSp {
+  border-bottom: 1px solid #0B090E;
+}
+#menuBtm_07 .liNavHeaderSp01 {
+  border-top: 1px solid #0B090E;
+}
+#menuBtm_07 .linkheaderNav {
+  color: #FFF;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+}
+#menuBtm_07 .btmNavHeaderSp {
+  padding: 11% 4.5% 10% 5%;
+  text-decoration: none;
+  color: #0B090E;
+}
+#menuBtm_07 .h3NavHeaderSp {
+  width: 120px;
+  line-height: 0.7;
+  white-space: nowrap;
+  letter-spacing: -0.04em;
+}
+@media screen and (max-width: 1260px) {
+  #menuBtm_07 .h3NavHeaderSp {
+    width: 54.05%;
+  }
+}
+@media screen and (max-width: 1261px) {
+  #menuBtm_07 .h3NavHeaderSp {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  #menuBtm_07 .h3NavHeaderSp {
+    font-size: 1.1904761905vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  #menuBtm_07 .h3NavHeaderSp {
+    font-size: 4vw;
+  }
+}
+#menuBtm_07 .txtNavHeader {
+  width: 100px;
+  line-height: 1;
+  text-align: right;
+  white-space: nowrap;
+  letter-spacing: -0.06em;
+}
+@media screen and (max-width: 1260px) {
+  #menuBtm_07 .txtNavHeader {
+    width: 45.04%;
+  }
+}
+@media screen and (max-width: 1261px) {
+  #menuBtm_07 .txtNavHeader {
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 1260px) {
+  #menuBtm_07 .txtNavHeader {
+    font-size: 0.9523809524vw;
+  }
+}
+@media screen and (max-width: 767px) {
+  #menuBtm_07 .txtNavHeader {
+    font-size: 3.2vw;
+  }
+}
+#menuBtm_07 .txtNavHeader::before {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-top: calc((1 - 1) * 0.5em);
+  content: "";
+}
+#menuBtm_07 .txtNavHeader::after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-bottom: calc((1 - 1) * 0.5em);
+  content: "";
+}
+#menuBtm_07 .btmContactSp {
+  width: 245px;
+  margin-top: 127px;
+  margin-bottom: 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 1260px) {
+  #menuBtm_07 .btmContactSp {
+    margin-top: 41.63%;
+    margin-bottom: 0%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.mainContents {
+  position: relative;
+  height: 300vh;
+}
+
+.mainSetumeiUl {
+  margin: 25vh auto 0 auto;
+  text-align: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+/* ==========================================================================
+    追従要素
+    ========================================================================== */
+.tuijyuuArea {
+  display: none;
+  position: fixed;
+  bottom: 2%;
+  right: 0;
+  width: 200px;
+  z-index: 2;
+  height: 200px;
+  background: #2fdd55;
+  display: flex;
+}
+
+.tuijyuuArea h1 {
+  margin: auto;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -4888,12 +5132,17 @@ LAYAUT
 }
 
 .mojipoyoLinks {
-  font-size: 20px;
+  font-size: 1.25em;
   color: #333;
 }
 
 .mojipoyoBox {
-  margin: 20% auto;
+  padding: 20% 0;
+}
+
+.mojipoyotitle {
+  font-size: 2em;
+  margin: 0 0 4% 0;
 }
 
 .mojipoyoBox button {
@@ -4905,13 +5154,22 @@ LAYAUT
   cursor: pointer;
 }
 
+.mojipoyoBox p {
+  font-size: 1.25em;
+}
+
+.mojipoyoBox button {
+  margin: 4% 0 0 0;
+  font-size: 1.25em;
+}
+
 /* ==========================================================================
 mojipoyo
 ========================================================================== */
 .mojipoyoH2 {
   display: flex;
   overflow: hidden;
-  font-size: 50px;
+  font-size: 4em;
 }
 
 .mojipoyoH2 {

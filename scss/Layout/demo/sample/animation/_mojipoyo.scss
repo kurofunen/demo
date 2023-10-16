@@ -10,12 +10,17 @@ LAYAUT
 }
 
 .mojipoyoLinks {
-    font-size: 20px;
+    font-size: 1.25em;
     color: #333;
 }
 
 .mojipoyoBox {
-    margin: 20% auto;
+    padding: 20% 0;
+}
+
+.mojipoyotitle {
+    font-size: 2em;
+    margin: 0 0 4% 0;
 }
 
 .mojipoyoBox button {
@@ -27,6 +32,14 @@ LAYAUT
     cursor: pointer;
 }
 
+.mojipoyoBox p {
+    font-size: 1.25em;
+}
+
+.mojipoyoBox button {
+    margin: 4% 0 0 0;
+    font-size: 1.25em;
+}
 
 /* ==========================================================================
 mojipoyo
@@ -36,7 +49,7 @@ mojipoyo
 .mojipoyoH2 {
     display: flex;
     overflow: hidden;
-    font-size: 50px;
+    font-size: 4em;
 }
 
 .mojipoyoH2 {

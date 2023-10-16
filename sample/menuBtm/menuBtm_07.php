@@ -2,40 +2,13 @@
 
 <body>
     <div class="wap">
-        <header id="menuBtm_04" class="base_header">
+        <header id="menuBtm_07" class="base_header">
             <div class="headerSpWap">
                 <div class="d_flex j_between bg_333 headerSpFx">
-                    <a class="d_block j_between ali_center j_around logoHeaderSp" href="">
-                        <h1 class="h1Title">ヘッダメニューサンプル04</h1>
+                    <a class="d_block logoHeaderSp" href="">
+                        <h1 class="h1Title">ヘッダメニューサンプル05</h1>
                     </a>
-                    <ul class="d_flex ulheaderNavTop">
-                        <li class="liheaderNavTop">
-                            <a class="linkheaderNav" href="#">
-                                TOP
-                            </a>
-                        </li>
-                        <li class="liheaderNavTop">
-                            <a class="linkheaderNav" href="#">
-                                ABOUT US
-                            </a>
-                        </li>
-                        <li class="liheaderNavTop">
-                            <a class="linkheaderNav" href="#">
-                                PACKAGE HOUSE
-                            </a>
-                        </li>
-                        <li class="liheaderNavTop">
-                            <a class="linkheaderNav" href="#">
-                                WORKS
-                            </a>
-                        </li>
-                        <li class="liheaderNavTop">
-                            <a class="linkheaderNav" href="#">
-                                COMPANY
-                            </a>
-                        </li>
-                    </ul>
-                    <div class="btmHeaderSp jsBtmHeaderSp off">
+                    <div class="btmHeaderSp jsBtmHeaderSp">
                         <div class="pore btmHeaderSpWap">
                             <span class="brdHeaderSp brdHeaderSp01"></span>
                             <span class="brdHeaderSp brdHeaderSp02"></span>
@@ -44,7 +17,7 @@
 
                     </div>
                 </div>
-                <nav class="bg_F6F4EE navHeaderSp jsNavHeaderSp off">
+                <nav class="bg_F6F4EE navHeaderSp jsNavHeaderSp">
                     <ul class="ulNavHeaderSp">
                         <li class="liNavHeaderSp liNavHeaderSp02">
                             <a class="cl_0B090E d_flex j_between ali_end btmNavHeaderSp" href="#">
@@ -80,10 +53,16 @@
                 </nav>
             </div>
         </header>
-        <main class="mainSetumei mainSetumei02">
+        <main class="wapper mainContents">
             <ul class="mainSetumeiUl">
-                <li class="mainSetumeiLi">スクロールしたらヘッダーを変える</li>
+                <li class="mainSetumeiLi">○○px過ぎたらヘッダを変更する</li>
             </ul>
+
+            <div class="tuijyuuArea">
+                <h1>追従の要素</h1>
+            </div>
         </main>
     </div>
 </body>
+
+</html>

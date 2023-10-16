@@ -8,12 +8,18 @@ Function
 LAYOUT
 ========================================================================== */
 
-#menuBtm_02 {
+
+#menuBtm_07 {
+    .mainFv {
+        height: 200vh;
+    }
+
     &.base_header {
         position: sticky;
         left: 0;
         width: 100%;
         top: 0;
+        z-index: 99;
 
         @include mi.mq(sp) {}
     }
@@ -38,9 +44,6 @@ LAYOUT
         color: #FFF;
     }
 
-    .h1Title {
-        @include mi.rsFontSize(20, 20, 15);
-    }
 
     /* ==========================================================================
 メニューボタンの設定
@@ -48,7 +51,6 @@ LAYOUT
     .btmHeaderSp {
         width: fit-content;
         cursor: pointer;
-        transition-duration: 0.5s;
 
         @include mi.mq(sp) {}
     }
@@ -73,7 +75,7 @@ LAYOUT
         margin: 0 auto;
     }
 
-    .btmHeaderSp.off {
+    .btmHeaderSp {
         .brdHeaderSp01 {
             top: 0px;
         }
@@ -103,92 +105,10 @@ LAYOUT
         }
     }
 
-    .btmHeaderSp.off .h3BtmHeaderSp .off {
-        display: block;
-    }
-
-    .btmHeaderSp.off .h3BtmHeaderSp .on {
-        display: none;
-    }
-
-    .btmHeaderSp.on .h3BtmHeaderSp .off {
-        display: none;
-    }
-
-    .btmHeaderSp.on .h3BtmHeaderSp .on {
-        display: block;
-    }
 
     /* ==========================================================================
-メニューボタンフォントの設定
-========================================================================== */
-
-
-    .h3BtmHeaderSp {
-        margin: 7px 0 0 0;
-        //@include mi.rsFontSize(15, 15, 10);
-        @include mi.lineheight(15, 15);
-        color: #FFF;
-
-        @include mi.mq(sp) {}
-    }
-
-    .navHeaderSp02 {
-        width: 305px;
-        height: 100vh;
-        margin: 0 0 0 auto;
-        padding: 32px 0 30px 0;
-        position: fixed;
-        right: 0;
-        z-index: 999999;
-        top: 65px;
-        right: -305px;
-        transition-duration: 0.25s;
-        background: #F6F4EE;
-
-        @include mi.mq(sp) {
-            top: 42px;
-        }
-
-        &.on {
-            right: 0;
-        }
-
-        &.off {
-            right: -305px;
-        }
-    }
-
-    .bgNvHeaderSp02 {
-        top: 64px;
-        width: 305px;
-        height: 100vh;
-        margin: 0 0 0 auto;
-        padding: 32px 0 30px 0;
-        position: fixed;
-        right: 0;
-        z-index: 999999;
-        top: 42px;
-        right: -305px;
-        transition-duration: 0.25s;
-        background: #F6F4EE;
-
-        @include mi.mq(sp) {
-            top: 42px;
-        }
-
-        &.on {
-            right: 0;
-        }
-
-        &.off {
-            right: -305px;
-        }
-    }
-
-    /* ==========================================================================
-ナビメニューの設定
-========================================================================== */
+    ナビメニューの設定
+    ========================================================================== */
     .navHeaderSp {
         width: 305px;
         height: 100vh;
@@ -196,23 +116,10 @@ LAYOUT
         padding: 32px 0 30px 0;
         position: absolute;
         right: 0;
-        z-index: 999999;
+        z-index: 999;
         top: 42px;
-        right: -305px;
-        transition-duration: 0.25s;
         background: #F6F4EE;
-
-        @include mi.mq(sp) {
-            top: 42px;
-        }
-
-        &.on {
-            right: 0;
-        }
-
-        &.off {
-            right: -305px;
-        }
+        display: none;
     }
 
     .ulNavHeaderSp {
@@ -226,6 +133,13 @@ LAYOUT
 
     .liNavHeaderSp01 {
         border-top: 1px solid #0B090E;
+    }
+
+    .linkheaderNav {
+        color: #FFF;
+        text-decoration: none;
+        font-size: 16px;
+        display: block;
     }
 
     .btmNavHeaderSp {
@@ -256,19 +170,34 @@ LAYOUT
         width: 245px;
         @include mi.marginPercent(305, 127, auto, 0, auto);
     }
+}
 
-    /* ==========================================================================
-背景の設定
-========================================================================== */
-    .bgNvHeaderSp {
-        background: rgba(25, 25, 25, 0.8);
-        height: 100vh;
-        width: 100%;
-        position: fixed;
-        top: 54px;
-        left: 0;
-        z-index: 99;
-        display: none;
-    }
+.mainContents {
+    position: relative;
+    height: 300vh;
+}
 
+.mainSetumeiUl {
+    margin: 25vh auto 0 auto;
+    text-align: center;
+    width: fit-content;
+}
+
+/* ==========================================================================
+    追従要素
+    ========================================================================== */
+.tuijyuuArea {
+    display: none;
+    position: fixed;
+    bottom: 2%;
+    right: 0;
+    width: 200px;
+    z-index: 2;
+    height: 200px;
+    background: #2fdd55;
+    display: flex;
+}
+
+.tuijyuuArea h1 {
+    margin: auto;
 }

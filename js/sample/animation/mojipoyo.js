@@ -2,7 +2,6 @@
 $(function () {
     var elm = $(".mojipoyospan");
     var content = $(elm).html();
-    console.log(content);
     var text = $.trim(content);
     var newHtml = "";
     text.split("").forEach(function (v) {
@@ -126,7 +125,24 @@ $(function () {
 })();
 
 
-
 $('button').on('click', function () {
-    window.location.reload();
+    let locatonHashs = location.hash;
+    let urls = location.href;
+    let urlHashs = $(this).parent().attr("id");
+
+    if (locatonHashs) {
+        let result = urls.split('#')[0];
+        urlHashs = result + "#" + urlHashs;
+        location.href = urlHashs;
+        window.location.reload();
+        let targets = $(this).parent();
+        let positions = targets.offset().top;
+        $('body,html').stop().animate({
+            scrollTop: positions
+        }, 500);
+
+    } else {
+        window.location.reload();
+    }
+
 });

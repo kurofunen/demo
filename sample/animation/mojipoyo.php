@@ -13,102 +13,115 @@
 <div class="wapper mojipoyoWap">
     <ul class="mojipoyoUl">
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap01">下からぽよよんと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap01">01.下からぽよよんと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap02">クルっと回って出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap02">02.クルっと回って出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap03">ほわわわんと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap03">03.ほわわわんと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap04">左からほわわわんと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap04">04.左からほわわわんと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap05">左からからぽよよよんと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap05">05.左からからぽよよよんと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap06">下からにょきぽよんと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap06">06.下からにょきぽよんと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap07">文字がx軸に回転する</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap07">07.文字がx軸に回転する</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap08">平べったいからにょきっと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap08">08.平べったいからにょきっと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap09">左からぶるるんと出てくる</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap09">09.左からぶるるんと出てくる</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap10">グラデーション文字</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap10">10.グラデーション文字</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap11">グラデーションの下線をつける</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap11">11.グラデーションの下線をつける</a>
         </li>
         <li class="mojipoyoLi">
-            <a class="mojipoyoLinks" href="#mojipoyoWap12">パンチパンチ</a>
+            <a class="mojipoyoLinks" href="#mojipoyoWap12">12.パンチパンチ</a>
         </li>
     </ul>
-    <p id="mojipoyoWap01">↓↓↓スクロールしてね01↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね01↓↓↓</p>
+    <div id="mojipoyoWap01" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">01.下からぽよよんと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_01">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap02">↓↓↓スクロールしてね02↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね02↓↓↓</p>
+    <div id="mojipoyoWap02" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">02.クルっと回って出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_02">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap03">↓↓↓スクロールしてね03↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね03↓↓↓</p>
+    <div id="mojipoyoWap03" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">03.ほわわわんと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_03">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap04">↓↓↓スクロールしてね04↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね04↓↓↓</p>
+    <div id="mojipoyoWap04" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">04.左からほわわわんと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_04">ぽぽぽ</h2>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap05">↓↓↓スクロールしてね05↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね05↓↓↓</p>
+    <div id="mojipoyoWap05" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">05.左からからぽよよよんと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_05">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap06">↓↓↓スクロールしてね06↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね06↓↓↓</p>
+    <div id="mojipoyoWap06" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">06.下からにょきぽよんと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_06">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap07">↓↓↓スクロールしてね07↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね07↓↓↓</p>
+    <div id="mojipoyoWap07" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">07.文字がx軸に回転する</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_07">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap08">↓↓↓スクロールしてね08↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね08↓↓↓</p>
+    <div id="mojipoyoWap08" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">08.平べったいからにょきっと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_08">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap09">↓↓↓スクロールしてね09↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね09↓↓↓</p>
+    <div id="mojipoyoWap09" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">09.左からぶるるんと出てくる</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_09">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
-    <p id="mojipoyoWap10">↓↓↓スクロールしてね10↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね10↓↓↓</p>
+    <div id="mojipoyoWap10" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">10.グラデーション文字</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_010">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
 
-    <p id="mojipoyoWap11">↓↓↓スクロールしてね11↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね11↓↓↓</p>
+    <div id="mojipoyoWap11" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">11.グラデーションの下線をつける</h2>
         <h2 class="mojipoyoH2 mojipoyoH2_011"><span class="mojipoyoH2_011_span">ぽぽぽぽぽ</span></h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
 
-    <p id="mojipoyoWap12">↓↓↓スクロールしてね12↓↓↓</p>
-    <div class="mojipoyoBox">
+    <p>↓↓↓スクロールしてね12↓↓↓</p>
+    <div id="mojipoyoWap12" class="mojipoyoBox">
+        <h2 class="mojipoyotitle">12.パンチパンチ</h2>
         <h2 class="mojipoyospan mojipoyoH2 mojipoyoH2_012">ぽぽぽ</h2>
-        <button onclick="window.location.reload();">リロード</button>
+        <button>リロード</button>
     </div>
 
     <!-- <div class="listSec">
