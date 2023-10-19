@@ -15,6 +15,7 @@
     <?php $nowpage = (empty($_SERVER['HTTPS']) ? 'http:/' : 'https:/') .$_SERVER['SCRIPT_FILENAME'];?>
     <?php $nowpageWithoutExtension = pathinfo($nowpage, PATHINFO_FILENAME);?>
     <script defer type='text/javascript' src="../../js/sample/menuBtm/<?php echo $nowpageWithoutExtension; ?>.js?v=<?php echo date('Y-m-d-H-i-s'); ?>"></script>
+    <script defer src="../../js/inview.min.js"></script>
     <link rel="stylesheet" href="../../css/common.css?v=<?php echo date('Y-m-d-H-i-s'); ?>">
     <!-- <link rel="stylesheet" href="../../css/<?php echo $nowpageWithoutExtension; ?>.css?v=<?php echo date('Y-m-d-H-i-s'); ?>"> -->
     <title>メニューデモ<?php echo $nowpageWithoutExtension; ?></title>
